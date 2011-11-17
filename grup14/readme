@@ -1,0 +1,20 @@
+EIK JavaEE grupitöö
+
+Meie ülesandeks on realiseerida intsidendi registreerimise alamsüsteemi allpool toodud vaated ja aruanded.
+
+TÄHTAEG: 1. detsember
+
+
+Tehnilised nõuded
+
+Projekt peab olema 100% automaatselt ehitatav Maven-i abil
+Lähteülesandes ette antud andmebaasi struktuuri muuta EI TOHI. Vähesel määral tohib muuta vaid väljade andmetüüpe, säilitades sealjuures välja põhitüübi (näiteks stringist integeri ei tohi teha) ja maksimaalse pikkuse, ning võimalikke kirjavigu (andmebaasi arhitekt on ka inimene)
+Lähteülesandes ette antud vaadete loogikat muuta ei tohi. Kujundus on loomulikult enda teha kuid vaade peab sisaldama kõiki nõutud elemente ja need peavad asuma lehel õigetes kohtades
+Andmebaasiga suhtlemiseks peab kasutama JPA tehnoloogiat
+Lahendus peab töötama rakendusserveril Tomcat 7.0.21 või uuem
+Kasutama peab HSQLDB 1.8.x andmebaasi
+Andmebaasi URL peab olema kujul: jdbc:hsqldb:file:${user.home}/i377/TeamXX/db;shutdown=true kus XX on meeskonna number.
+Rakendus peab esimesel käivitamisel looma ise oma tööks vajalikud andmebaasi tabelid
+Rakendus peab esimesel käivitamisel tekitama funktsionaalsuse demonstreerimiseks vajaliku komplekti näidisandmeid
+Andmebaasi sisestatud andmed ei tohi rakenduse restartimisel ära kaduda
+Mitte ükski osa rakendusest ei tohi kasutada Flash tehnoloogiat
