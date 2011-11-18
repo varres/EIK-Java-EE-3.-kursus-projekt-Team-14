@@ -9,5 +9,6 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <a href="leht2.jsp">link lehele 2</a>
     </body>
 </html>
