@@ -8,3 +8,4 @@ entity --class ~.entities.intsident
 field number --fieldName intsident_ID --notNull --type int
 web mvc setup
 web mvc all --package ~.web
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-24 18:56:19

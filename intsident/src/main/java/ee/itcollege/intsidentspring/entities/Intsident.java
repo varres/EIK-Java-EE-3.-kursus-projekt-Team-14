@@ -2,6 +2,7 @@ package ee.itcollege.intsidentspring.entities;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -42,29 +43,54 @@ public class Intsident {
 
     @NotNull
     private int intsident_ID;
+    
     @NotNull
 	private String avaja;
+    
     @NotNull
+    @DateTimeFormat(style="M-")
     private Date avatud;
+    
     @NotNull
 	private String muutja;
+    
     @NotNull
+    @DateTimeFormat(style="M-")
     private Date muudetud;
-	private String sulgeja;
+	
+    private String sulgeja;
+	
 	@NotNull
+	@DateTimeFormat(style="M-")
 	private Date suletud;
+	
 	private String kood;
+	
 	private String nimetus;
+	
+	@DateTimeFormat(style="M-")
 	private Date toimumise_algus;
+	
+	@DateTimeFormat(style="M-")
 	private Date toimumise_lopp;
+	
 	private String kirjeldus;
+	
 	private String kommentaar;
+	
 	private int piiriloik_ID;
+	
 	@NotNull
 	private int intsidendi_liik_ID;
+	
 	private int GPS_longituud;
+	
 	private int GPS_latituud;
+	
 	private int intsident_ID_FK; // FOREIGN KEY
+	
 	private int intsidendi_liik_ID_FK; // FOREIGN KEY
+	
 	private int piiriloik_ID_FK; // //FOREIGN KEY
+
 }
