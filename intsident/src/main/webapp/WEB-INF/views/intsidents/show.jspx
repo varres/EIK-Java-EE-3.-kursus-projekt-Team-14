@@ -20,8 +20,5 @@
         <field:display field="intsidendi_liik_ID" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID" object="${intsident}" z="IS11tEODSKGngCM/Ddhy+s1bUCM="/>
         <field:display field="GPS_longituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" object="${intsident}" z="Rh5QYlTQMSJU9ABheT1Tpz+7GHc="/>
         <field:display field="GPS_latituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" object="${intsident}" z="PtFgF69HwR1KZVwjxfi0jnbFKww="/>
-        <field:display field="intsident_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsident_ID_FK" object="${intsident}" z="YcrhNXQaAou65pB09T474AlXdk4="/>
-        <field:display field="intsidendi_liik_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID_FK" object="${intsident}" z="gIhF1bDGQTqd6gacHVBSQscyQ9A="/>
-        <field:display field="piiriloik_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_piiriloik_ID_FK" object="${intsident}" z="OTZhD5FuTez5iEVKtSGa7W91a8c="/>
     </page:show>
 </div>

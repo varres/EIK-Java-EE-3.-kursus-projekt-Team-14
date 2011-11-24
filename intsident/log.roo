@@ -9,3 +9,13 @@ field number --fieldName intsident_ID --notNull --type int
 web mvc setup
 web mvc all --package ~.web
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-24 18:56:19
+entity --class ~.entities.vahtkond
+field number --fieldName vahtkond_ID --notNull --type int
+field string --fieldName nimetus --notNull
+field string --fieldName kommentaar
+entity --class ~entities.vahtkond_intsidendis
+field number --fieldName vahtkond_intsidendis_ID --notNull --type int
+field date --fieldName alates --type java.util.Date
+field date --fieldName kuni --type java.util.Date
+field number --fieldName vahtkond_ID --notNull --type int
+field number --fieldName intsident_ID --notNull --type int

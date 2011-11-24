@@ -20,9 +20,6 @@
         <field:input field="intsidendi_liik_ID" id="c_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID" required="true" z="31TkZFjvAj4s7AGZ18sX/oPlaEw="/>
         <field:input field="GPS_longituud" id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" z="lLu6Q9jk5AM6ZwUywMhWurZAUtg="/>
         <field:input field="GPS_latituud" id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" z="lysAPHD+0yKDya+FEggYvRH8KHQ="/>
-        <field:input field="intsident_ID_FK" id="c_ee_itcollege_intsidentspring_entities_Intsident_intsident_ID_FK" z="PVfe4fiM+P1oZ2IOzldP5KUUDso="/>
-        <field:input field="intsidendi_liik_ID_FK" id="c_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID_FK" z="bOHRPqD6PdhbOX+gb0EdGtiVMvQ="/>
-        <field:input field="piiriloik_ID_FK" id="c_ee_itcollege_intsidentspring_entities_Intsident_piiriloik_ID_FK" z="tPDv423fUfFsk3ccqrP+WPPWQ3E="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Intsident" render="${not empty dependencies}" z="Jr7ur7F/caTODVOxbqUsghMeJu4="/>
 </div>

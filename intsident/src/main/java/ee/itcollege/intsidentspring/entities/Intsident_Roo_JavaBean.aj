@@ -144,28 +144,4 @@ privileged aspect Intsident_Roo_JavaBean {
         this.GPS_latituud = GPS_latituud;
     }
     
-    public int Intsident.getIntsident_ID_FK() {
-        return this.intsident_ID_FK;
-    }
-    
-    public void Intsident.setIntsident_ID_FK(int intsident_ID_FK) {
-        this.intsident_ID_FK = intsident_ID_FK;
-    }
-    
-    public int Intsident.getIntsidendi_liik_ID_FK() {
-        return this.intsidendi_liik_ID_FK;
-    }
-    
-    public void Intsident.setIntsidendi_liik_ID_FK(int intsidendi_liik_ID_FK) {
-        this.intsidendi_liik_ID_FK = intsidendi_liik_ID_FK;
-    }
-    
-    public int Intsident.getPiiriloik_ID_FK() {
-        return this.piiriloik_ID_FK;
-    }
-    
-    public void Intsident.setPiiriloik_ID_FK(int piiriloik_ID_FK) {
-        this.piiriloik_ID_FK = piiriloik_ID_FK;
-    }
-    
 }

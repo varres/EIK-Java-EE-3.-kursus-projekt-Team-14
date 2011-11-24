@@ -86,11 +86,5 @@ public class Intsident {
 	private int GPS_longituud;
 	
 	private int GPS_latituud;
-	
-	private int intsident_ID_FK; // FOREIGN KEY
-	
-	private int intsidendi_liik_ID_FK; // FOREIGN KEY
-	
-	private int piiriloik_ID_FK; // //FOREIGN KEY
 
 }
