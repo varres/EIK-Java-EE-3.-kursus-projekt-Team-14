@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_intsidentspring_entities_Intsident" object="${intsident}" path="/intsidents" z="74zuJ7rzW4DH8BcNXq3JYullx9E=">
+        <field:display field="intsident_ID" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsident_ID" object="${intsident}" z="nqGnE0SNOtr9ZXHLCV6FOWKv2I4="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_Intsident_avaja" object="${intsident}" z="AvbRWFXiTjp50nSRbhbNB37yTzE="/>
+        <field:display date="true" dateTimePattern="${intsident_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_Intsident_avatud" object="${intsident}" z="xId6ZY41BqQWZzlNjRenTNnKPV0="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_Intsident_muutja" object="${intsident}" z="DZJnoWN5PmZ2VCjbPuC+ZtKMX5Q="/>
+        <field:display date="true" dateTimePattern="${intsident_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_Intsident_muudetud" object="${intsident}" z="XkGzHgEmX0FU8UFKbzySQhMqEdY="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Intsident_sulgeja" object="${intsident}" z="TMoy7EWG6MEmcfV1vis6rLrnqCg="/>
+        <field:display date="true" dateTimePattern="${intsident_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Intsident_suletud" object="${intsident}" z="JUbgwLjaIKUN7IDcaeilrWD6ELU="/>
+        <field:display field="kood" id="s_ee_itcollege_intsidentspring_entities_Intsident_kood" object="${intsident}" z="YkfNrnTyJjWIElVwA287MIAYhAA="/>
+        <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_Intsident_nimetus" object="${intsident}" z="Cc+usOZDK+x2QpnPRHBTDIZWzYA="/>
+        <field:display date="true" dateTimePattern="${intsident_toimumise_algus_date_format}" field="toimumise_algus" id="s_ee_itcollege_intsidentspring_entities_Intsident_toimumise_algus" object="${intsident}" z="TjCO8nK5XspvBs9VX2Pi9xeU38g="/>
+        <field:display date="true" dateTimePattern="${intsident_toimumise_lopp_date_format}" field="toimumise_lopp" id="s_ee_itcollege_intsidentspring_entities_Intsident_toimumise_lopp" object="${intsident}" z="3ZYJjSCThIjfFZM2CubI1tYT6+I="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_Intsident_kirjeldus" object="${intsident}" z="vjkJO+jydoliJiaAS3VgXA2JLI8="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Intsident_kommentaar" object="${intsident}" z="8wCwtyZLYsj5UhUivdN8ICKf0IE="/>
+        <field:display field="piiriloik_ID" id="s_ee_itcollege_intsidentspring_entities_Intsident_piiriloik_ID" object="${intsident}" z="xCZl8z7pKahYQ6jbZerhDB2rQgw="/>
+        <field:display field="intsidendi_liik_ID" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID" object="${intsident}" z="IS11tEODSKGngCM/Ddhy+s1bUCM="/>
+        <field:display field="GPS_longituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" object="${intsident}" z="Rh5QYlTQMSJU9ABheT1Tpz+7GHc="/>
+        <field:display field="GPS_latituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" object="${intsident}" z="PtFgF69HwR1KZVwjxfi0jnbFKww="/>
+        <field:display field="intsident_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsident_ID_FK" object="${intsident}" z="YcrhNXQaAou65pB09T474AlXdk4="/>
+        <field:display field="intsidendi_liik_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsidendi_liik_ID_FK" object="${intsident}" z="gIhF1bDGQTqd6gacHVBSQscyQ9A="/>
+        <field:display field="piiriloik_ID_FK" id="s_ee_itcollege_intsidentspring_entities_Intsident_piiriloik_ID_FK" object="${intsident}" z="OTZhD5FuTez5iEVKtSGa7W91a8c="/>
+    </page:show>
+</div>
