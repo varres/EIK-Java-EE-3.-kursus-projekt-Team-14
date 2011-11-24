@@ -20,6 +20,10 @@ public class IntsidentTest extends HttpServlet {
     public IntsidentTest() {
         super();
         // TODO Auto-generated constructor stub
+        
+        final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(this.getClass());
+        log.warn("Mina olin siin!");
+        
     }
 
 	/**
