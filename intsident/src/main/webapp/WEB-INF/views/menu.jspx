@@ -7,5 +7,17 @@
             <menu:item id="i_test_donotdelete_new" messageCode="global_menu_new" url="/test_donotdeletes?form" z="Wo37JSxRqNR1MqIgLImzuzLLTEI="/>
             <menu:item id="i_test_donotdelete_list" messageCode="global_menu_list" url="/test_donotdeletes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="FAcjOcB2B/cKaDHbb3To1jh63MM="/>
         </menu:category>
+        <menu:category id="c_vahtkond" z="c/riL356fHQk+/mY3ExRqrVhU/4=">
+            <menu:item id="i_vahtkond_new" messageCode="global_menu_new" url="/vahtkonds?form" z="bvt9LhUzxYB+1+sxarsHufGq1po="/>
+            <menu:item id="i_vahtkond_list" messageCode="global_menu_list" url="/vahtkonds?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yjK8dn1Lr/RZ1HbVVrZdpoTkXKI="/>
+        </menu:category>
+        <menu:category id="c_vahtkond_intsidendis" z="1X5BSVIFivD7S4iiBbVzk1FZBug=">
+            <menu:item id="i_vahtkond_intsidendis_new" messageCode="global_menu_new" url="/vahtkond_intsidendises?form" z="OW4mBDVvLKMeQfVakGaYauGFx8A="/>
+            <menu:item id="i_vahtkond_intsidendis_list" messageCode="global_menu_list" url="/vahtkond_intsidendises?page=1&amp;size=${empty param.size ? 10 : param.size}" z="EfrVisjXKArX/kryJWSntjx3o9w="/>
+        </menu:category>
+        <menu:category id="c_intsident" z="kwTJaHl5VF4ahaSorWL0R46/LTM=">
+            <menu:item id="i_intsident_new" messageCode="global_menu_new" url="/intsidents?form" z="PoAgtQFn6iVS32mKUjyI3kM2khc="/>
+            <menu:item id="i_intsident_list" messageCode="global_menu_list" url="/intsidents?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kHeRRwTb9AVfs3A2YRAPSkAX64k="/>
+        </menu:category>
     </menu:menu>
 </div>
