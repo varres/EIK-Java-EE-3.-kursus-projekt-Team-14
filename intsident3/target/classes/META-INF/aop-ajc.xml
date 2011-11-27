@@ -1,0 +1,21 @@
+<aspectj>
+<aspects>
+<aspect name="ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_Roo_Entity"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_intsidendis_Roo_JavaBean"/>
+<aspect name="ee.itcollege.intsidentspring.web.Vahtkond_intsidendisController_Roo_Controller"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_intsidendis_Roo_Configurable"/>
+<aspect name="ee.itcollege.intsidentspring.web.VahtkondController_Roo_Controller"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_intsidendis_Roo_Entity"/>
+<aspect name="ee.itcollege.intsidentspring.web.IntsidentController_Roo_Controller"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_Roo_ToString"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_Roo_JavaBean"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Intsident_Roo_Configurable"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Intsident_Roo_Entity"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_Roo_Configurable"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Intsident_Roo_ToString"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Intsident_Roo_JavaBean"/>
+<aspect name="ee.itcollege.intsidentspring.entities.Vahtkond_intsidendis_Roo_ToString"/>
+</aspects>
+</aspectj>
+
