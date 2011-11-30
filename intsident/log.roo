@@ -16,3 +16,9 @@ focus --class ~.entities.Vahtkond
 web mvc all --package ~.web
 focus --class ~.entities.VahtkondIntsidendis
 field reference --fieldName vahtkond2 --type ~.entities.Vahtkond
+entity --class ~.entities.IntsidendiLiik
+entity --class ~.entities.Objekt
+entity --class ~.entities.ObjektIntsidendis
+entity --class ~.entities.Piiriloik
+web mvc all --package ~.web
+web mvc all --package ~.web

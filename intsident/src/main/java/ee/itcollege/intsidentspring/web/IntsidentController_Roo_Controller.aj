@@ -3,12 +3,16 @@
 
 package ee.itcollege.intsidentspring.web;
 
+import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
 import ee.itcollege.intsidentspring.entities.Intsident;
+import ee.itcollege.intsidentspring.entities.Piiriloik;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
 import java.lang.String;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.joda.time.format.DateTimeFormat;
@@ -41,6 +45,14 @@ privileged aspect IntsidentController_Roo_Controller {
     public String IntsidentController.createForm(Model uiModel) {
         uiModel.addAttribute("intsident", new Intsident());
         addDateTimeFormatPatterns(uiModel);
+        List dependencies = new ArrayList();
+        if (Piiriloik.countPiiriloiks() == 0) {
+            dependencies.add(new String[]{"piiriloik", "piiriloiks"});
+        }
+        if (IntsidendiLiik.countIntsidendiLiiks() == 0) {
+            dependencies.add(new String[]{"intsidendiliik", "intsidendiliiks"});
+        }
+        uiModel.addAttribute("dependencies", dependencies);
         return "intsidents/create";
     }
     
@@ -94,15 +106,22 @@ privileged aspect IntsidentController_Roo_Controller {
         return "redirect:/intsidents";
     }
     
+    @ModelAttribute("intsidendiliiks")
+    public Collection<IntsidendiLiik> IntsidentController.populateIntsidendiLiiks() {
+        return IntsidendiLiik.findAllIntsidendiLiiks();
+    }
+    
     @ModelAttribute("intsidents")
     public Collection<Intsident> IntsidentController.populateIntsidents() {
         return Intsident.findAllIntsidents();
     }
     
+    @ModelAttribute("piiriloiks")
+    public Collection<Piiriloik> IntsidentController.populatePiiriloiks() {
+        return Piiriloik.findAllPiiriloiks();
+    }
+    
     void IntsidentController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("intsident_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("intsident_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
-        uiModel.addAttribute("intsident_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("intsident_toimumise_algus_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("intsident_toimumise_lopp_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }

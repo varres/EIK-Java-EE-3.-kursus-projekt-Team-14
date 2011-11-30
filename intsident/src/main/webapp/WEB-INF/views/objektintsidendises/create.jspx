@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" modelAttribute="objektIntsidendis" path="/objektintsidendises" render="${empty dependencies}" z="L55X7Ria0/SQLCSZ/67DLKVd10w=">
+        <field:select field="objekt" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_objekt" itemValue="id" items="${objekts}" path="/objekts" required="true" z="gmncDH+x+BVl63OfPkylyMIZkaE="/>
+        <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="IDu0+jOqYzmj/C6ROVayU336948="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" render="${not empty dependencies}" z="gRR2HeZa+L/Wq1lKuVP6I0c1h6o="/>
+</div>

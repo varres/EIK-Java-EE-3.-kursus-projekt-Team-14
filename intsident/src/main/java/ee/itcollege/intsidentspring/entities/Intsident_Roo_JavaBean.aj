@@ -3,66 +3,12 @@
 
 package ee.itcollege.intsidentspring.entities;
 
+import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
+import ee.itcollege.intsidentspring.entities.Piiriloik;
 import java.lang.String;
 import java.util.Date;
 
 privileged aspect Intsident_Roo_JavaBean {
-    
-    public int Intsident.getIntsident_ID() {
-        return this.intsident_ID;
-    }
-    
-    public void Intsident.setIntsident_ID(int intsident_ID) {
-        this.intsident_ID = intsident_ID;
-    }
-    
-    public String Intsident.getAvaja() {
-        return this.avaja;
-    }
-    
-    public void Intsident.setAvaja(String avaja) {
-        this.avaja = avaja;
-    }
-    
-    public Date Intsident.getAvatud() {
-        return this.avatud;
-    }
-    
-    public void Intsident.setAvatud(Date avatud) {
-        this.avatud = avatud;
-    }
-    
-    public String Intsident.getMuutja() {
-        return this.muutja;
-    }
-    
-    public void Intsident.setMuutja(String muutja) {
-        this.muutja = muutja;
-    }
-    
-    public Date Intsident.getMuudetud() {
-        return this.muudetud;
-    }
-    
-    public void Intsident.setMuudetud(Date muudetud) {
-        this.muudetud = muudetud;
-    }
-    
-    public String Intsident.getSulgeja() {
-        return this.sulgeja;
-    }
-    
-    public void Intsident.setSulgeja(String sulgeja) {
-        this.sulgeja = sulgeja;
-    }
-    
-    public Date Intsident.getSuletud() {
-        return this.suletud;
-    }
-    
-    public void Intsident.setSuletud(Date suletud) {
-        this.suletud = suletud;
-    }
     
     public String Intsident.getKood() {
         return this.kood;
@@ -112,20 +58,20 @@ privileged aspect Intsident_Roo_JavaBean {
         this.kommentaar = kommentaar;
     }
     
-    public int Intsident.getPiiriloik_ID() {
-        return this.piiriloik_ID;
+    public Piiriloik Intsident.getPiiriloik() {
+        return this.piiriloik;
     }
     
-    public void Intsident.setPiiriloik_ID(int piiriloik_ID) {
-        this.piiriloik_ID = piiriloik_ID;
+    public void Intsident.setPiiriloik(Piiriloik piiriloik) {
+        this.piiriloik = piiriloik;
     }
     
-    public int Intsident.getIntsidendi_liik_ID() {
-        return this.intsidendi_liik_ID;
+    public IntsidendiLiik Intsident.getIntsidenti_liik() {
+        return this.intsidenti_liik;
     }
     
-    public void Intsident.setIntsidendi_liik_ID(int intsidendi_liik_ID) {
-        this.intsidendi_liik_ID = intsidendi_liik_ID;
+    public void Intsident.setIntsidenti_liik(IntsidendiLiik intsidenti_liik) {
+        this.intsidenti_liik = intsidenti_liik;
     }
     
     public int Intsident.getGPS_longituud() {

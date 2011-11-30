@@ -7,14 +7,6 @@ import java.lang.String;
 
 privileged aspect Vahtkond_Roo_JavaBean {
     
-    public int Vahtkond.getVahtkond_ID() {
-        return this.vahtkond_ID;
-    }
-    
-    public void Vahtkond.setVahtkond_ID(int vahtkond_ID) {
-        this.vahtkond_ID = vahtkond_ID;
-    }
-    
     public String Vahtkond.getNimetus() {
         return this.nimetus;
     }

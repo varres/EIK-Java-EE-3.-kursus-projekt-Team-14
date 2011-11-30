@@ -12,7 +12,6 @@ privileged aspect Vahtkond_Roo_ToString {
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
-        sb.append("Vahtkond_ID: ").append(getVahtkond_ID()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

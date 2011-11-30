@@ -6,6 +6,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
+
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
 //CREATE TABLE INTSIDENT (
@@ -41,28 +44,28 @@ import javax.validation.constraints.NotNull;
 @RooEntity
 public class Intsident {
 
-    @NotNull
-    private int intsident_ID;
-    
-    @NotNull
-	private String avaja;
-    
-    @NotNull
-    @DateTimeFormat(style="M-")
-    private Date avatud;
-    
-    @NotNull
-	private String muutja;
-    
-    @NotNull
-    @DateTimeFormat(style="M-")
-    private Date muudetud;
-	
-    private String sulgeja;
-	
-	@NotNull
-	@DateTimeFormat(style="M-")
-	private Date suletud;
+//    @NotNull
+//    private int intsident_ID;
+//    
+//    @NotNull
+//	private String avaja;
+//    
+//    @NotNull
+//    @DateTimeFormat(style="M-")
+//    private Date avatud;
+//    
+//    @NotNull
+//	private String muutja;
+//    
+//    @NotNull
+//    @DateTimeFormat(style="M-")
+//    private Date muudetud;
+//	
+//    private String sulgeja;
+//	
+//	@NotNull
+//	@DateTimeFormat(style="M-")
+//	private Date suletud;
 	
 	private String kood;
 	
@@ -78,10 +81,13 @@ public class Intsident {
 	
 	private String kommentaar;
 	
-	private int piiriloik_ID;
-	
+	@ManyToOne
 	@NotNull
-	private int intsidendi_liik_ID;
+	private Piiriloik piiriloik;
+	
+	@ManyToOne
+	@NotNull
+	private IntsidendiLiik intsidenti_liik;
 	
 	private int GPS_longituud;
 	

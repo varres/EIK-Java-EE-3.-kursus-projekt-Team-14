@@ -27,8 +27,7 @@ public class VahtkondIntsidendis {
     @ManyToOne
     @NotNull
     private Intsident intsident;
-    
-    
+     
     private String kirjeldus;
 
     private String kommentaar;

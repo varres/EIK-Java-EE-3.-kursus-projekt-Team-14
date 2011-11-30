@@ -11,9 +11,6 @@ import javax.validation.constraints.NotNull;
 public class Vahtkond {
 
     @NotNull
-    private int vahtkond_ID;
-
-    @NotNull
     private String nimetus;
 
     private String kommentaar;
