@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" modelAttribute="vahtkondIntsidendis" path="/vahtkondintsidendises" versionField="Version" z="rZn28UiApSKaj2GW9v43gnudqJE=">
+        <field:select field="vahtkond" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" itemValue="id" items="${vahtkonds}" path="/vahtkonds" required="true" z="9BBAoljWydpR2solaJev3o6TN6k="/>
+        <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="IqBT7z6Bcatdkr7QkdNsozD6yk0="/>
+        <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" z="9weQjv/WCplJC88gU8ZqHy/bfKY="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" z="vqW+hDT2DPfDVvk37C7Z3i76FN8="/>
+    </form:update>
+</div>

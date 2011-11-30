@@ -4,9 +4,8 @@
 package ee.itcollege.intsidentspring.web;
 
 import ee.itcollege.intsidentspring.entities.Intsident;
-import ee.itcollege.intsidentspring.entities.TEST_DONOTDELETE;
 import ee.itcollege.intsidentspring.entities.Vahtkond;
-import ee.itcollege.intsidentspring.entities.Vahtkond_intsidendis;
+import ee.itcollege.intsidentspring.entities.VahtkondIntsidendis;
 import java.lang.String;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
@@ -15,9 +14,8 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(new IntsidentConverter());
-        registry.addConverter(new TEST_DONOTDELETEConverter());
         registry.addConverter(new VahtkondConverter());
-        registry.addConverter(new Vahtkond_intsidendisConverter());
+        registry.addConverter(new VahtkondIntsidendisConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {
@@ -32,13 +30,6 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         
     }
     
-    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.TEST_DONOTDELETEConverter implements Converter<TEST_DONOTDELETE, String> {
-        public String convert(TEST_DONOTDELETE tEST_DONOTDELETE) {
-            return new StringBuilder().append(tEST_DONOTDELETE.getName()).toString();
-        }
-        
-    }
-    
     static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.VahtkondConverter implements Converter<Vahtkond, String> {
         public String convert(Vahtkond vahtkond) {
             return new StringBuilder().append(vahtkond.getVahtkond_ID()).append(" ").append(vahtkond.getNimetus()).append(" ").append(vahtkond.getKommentaar()).toString();
@@ -46,9 +37,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         
     }
     
-    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.Vahtkond_intsidendisConverter implements Converter<Vahtkond_intsidendis, String> {
-        public String convert(Vahtkond_intsidendis vahtkond_intsidendis) {
-            return new StringBuilder().append(vahtkond_intsidendis.getVahtkond_intsidendis_ID()).append(" ").append(vahtkond_intsidendis.getAvaja()).append(" ").append(vahtkond_intsidendis.getAvatud()).append(" ").append(vahtkond_intsidendis.getMuutja()).toString();
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.VahtkondIntsidendisConverter implements Converter<VahtkondIntsidendis, String> {
+        public String convert(VahtkondIntsidendis vahtkondIntsidendis) {
+            return new StringBuilder().append(vahtkondIntsidendis.getKirjeldus()).append(" ").append(vahtkondIntsidendis.getKommentaar()).toString();
         }
         
     }

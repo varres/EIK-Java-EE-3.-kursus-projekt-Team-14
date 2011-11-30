@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" items="${vahtkondintsidendises}" z="HI+4HzYbpfSClH5huVbFxY/9xJ8=">
+        <table:table data="${vahtkondintsidendises}" id="l_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" path="/vahtkondintsidendises" z="nfpJmYfQ+kWTYm5SWcoZBSagLsI=">
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" property="vahtkond" z="6aeivETNnbODV8lWeKB2PX5xZX4="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" property="intsident" z="44c6vQQTLeAj29+JPOP5EwfsogE="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" property="kirjeldus" z="Q7XqzW9XDMghYnPA7hhZ91xcnps="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" property="kommentaar" z="6asMYJbrFVPxQxZ5ja4T2G9Jm0s="/>
+        </table:table>
+    </page:list>
+</div>

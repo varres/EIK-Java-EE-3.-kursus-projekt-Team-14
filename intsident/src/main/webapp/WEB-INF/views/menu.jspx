@@ -11,5 +11,9 @@
             <menu:item id="i_intsident_new" messageCode="global_menu_new" url="/intsidents?form" z="PoAgtQFn6iVS32mKUjyI3kM2khc="/>
             <menu:item id="i_intsident_list" messageCode="global_menu_list" url="/intsidents?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kHeRRwTb9AVfs3A2YRAPSkAX64k="/>
         </menu:category>
+        <menu:category id="c_vahtkondintsidendis" z="MLLyNPlDqnkcOGrsw9EO8JDlx7I=">
+            <menu:item id="i_vahtkondintsidendis_new" messageCode="global_menu_new" url="/vahtkondintsidendises?form" z="jtqXO+WOaS/id6UHWPrtpIqFYAo="/>
+            <menu:item id="i_vahtkondintsidendis_list" messageCode="global_menu_list" url="/vahtkondintsidendises?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YUVDehSbLKNZA/UUy/ICnl3mNLg="/>
+        </menu:category>
     </menu:menu>
 </div>

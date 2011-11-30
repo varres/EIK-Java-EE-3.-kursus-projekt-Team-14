@@ -9,10 +9,3 @@ web mvc setup
 web mvc all --package ~.web
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-27 20:39:15
 web mvc all --package ~.web
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-30 19:21:07
-entity --class ~.entities.VahtkondIntsidendis
-field set --fieldName vahtkonnad --type ~.entities.Vahtkond --cardinality ONE_TO_MANY --mappedBy vahtkond_ID
-focus --class ~.entities.Vahtkond
-web mvc all --package ~.web
-focus --class ~.entities.VahtkondIntsidendis
-field reference --fieldName vahtkond2 --type ~.entities.Vahtkond

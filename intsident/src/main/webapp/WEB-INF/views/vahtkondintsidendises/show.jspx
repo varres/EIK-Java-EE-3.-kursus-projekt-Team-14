@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" object="${vahtkondintsidendis}" path="/vahtkondintsidendises" z="AGVn/SUdHp/nB4McPrweU0EBm9M=">
+        <field:display field="vahtkond" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" object="${vahtkondintsidendis}" z="m/HN8e2IqAgxl4v3fEGiKXiuXbA="/>
+        <field:display field="intsident" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" object="${vahtkondintsidendis}" z="BzjGQqR7leIp3A6TmesQOZWlRQg="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" object="${vahtkondintsidendis}" z="Tye+ShsImAfOHbRz+En2IMro3d8="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" object="${vahtkondintsidendis}" z="LAPvwaQMHII5Ie3kKJkOAKPaB94="/>
+    </page:show>
+</div>
