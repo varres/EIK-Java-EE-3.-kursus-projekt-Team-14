@@ -22,3 +22,4 @@ entity --class ~.entities.ObjektIntsidendis
 entity --class ~.entities.Piiriloik
 web mvc all --package ~.web
 web mvc all --package ~.web
+security setup
