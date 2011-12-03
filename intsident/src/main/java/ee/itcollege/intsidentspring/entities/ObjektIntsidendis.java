@@ -13,7 +13,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class ObjektIntsidendis {
+public class ObjektIntsidendis extends BaseEntity {
 	
 	@ManyToOne
 	@NotNull

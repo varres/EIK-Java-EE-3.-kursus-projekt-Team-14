@@ -4,7 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_Objekt" items="${objekts}" z="xWpi1qC0LUo60QOVkpLbNJVBs6M=">
         <table:table data="${objekts}" id="l_ee_itcollege_intsidentspring_entities_Objekt" path="/objekts" z="PeXaz6nY7Do4lcjqrtHwYwAJga4=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Objekt_nimetus" property="nimetus" z="Kwg86t7VVGzrJ6CHLShYAbLL7VY="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Objekt_avaja" property="avaja" z="1pg8qvd97AX8NEHf/bchPUsUCGk="/>
+            <table:column date="true" dateTimePattern="${objekt_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Objekt_avatud" property="avatud" z="ARRZQrs+8OURQZdUoSwAp1GRvXs="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Objekt_muutja" property="muutja" z="BDizO5vqgSjX2n86aSGGc0DqYc0="/>
+            <table:column date="true" dateTimePattern="${objekt_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Objekt_muudetud" property="muudetud" z="FFqEeXI27K1YAoGTaK4Y0p6qkO8="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Objekt_sulgeja" property="sulgeja" z="tLiUH2Z+e0WqLIGJdXPwAgrXYC8="/>
+            <table:column date="true" dateTimePattern="${objekt_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Objekt_suletud" property="suletud" z="1Kwmzl8OjWzix4OnncicdH4JIA4="/>
         </table:table>
     </page:list>
 </div>

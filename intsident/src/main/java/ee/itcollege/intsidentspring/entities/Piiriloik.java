@@ -9,7 +9,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Piiriloik {
+public class Piiriloik extends BaseEntity {
 	
 	@NotNull
 	private String kood;

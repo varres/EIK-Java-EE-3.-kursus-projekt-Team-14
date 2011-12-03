@@ -8,5 +8,12 @@
         <field:display date="true" dateTimePattern="${objektIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_alates" object="${objektintsidendis}" z="LkwT4yQ/FIUZspTD0msfpg1Exqo="/>
         <field:display date="true" dateTimePattern="${objektIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kuni" object="${objektintsidendis}" z="ci36csenwoBcUSn1nyWf4yBbVj8="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kirjeldus" object="${objektintsidendis}" z="TBB699cMa41iMBTmQ9wQ/im6VVk="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_avaja" object="${objektintsidendis}" z="TAlRkTraVBm9PjzpY5c/2L9ziLA="/>
+        <field:display date="true" dateTimePattern="${objektIntsidendis_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_avatud" object="${objektintsidendis}" z="IyciAskxN3mwt9CaiBPGMw+AMug="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_muutja" object="${objektintsidendis}" z="5z1UZKw3es5uUcn998MP6cR/Skg="/>
+        <field:display date="true" dateTimePattern="${objektIntsidendis_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_muudetud" object="${objektintsidendis}" z="wY8945+Kbmac+R2DSbDuk+wKKN0="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_sulgeja" object="${objektintsidendis}" z="PBdmt7aRTjTFp4/WSt4mNAKoYvw="/>
+        <field:display date="true" dateTimePattern="${objektIntsidendis_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_suletud" object="${objektintsidendis}" z="HZx32aWR5c1TKjHKeHgYMretivw="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kommentaar" object="${objektintsidendis}" z="ZLPayJ5FtAYdsd0rSUURi+Z631E="/>
     </page:show>
 </div>

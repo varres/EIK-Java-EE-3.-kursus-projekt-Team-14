@@ -122,6 +122,9 @@ privileged aspect VahtkondPiiriloigulController_Roo_Controller {
     }
     
     void VahtkondPiiriloigulController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("vahtkondPiiriloigul_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("vahtkondPiiriloigul_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("vahtkondPiiriloigul_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("vahtkondPiiriloigul_alates_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("vahtkondPiiriloigul_kuni_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }

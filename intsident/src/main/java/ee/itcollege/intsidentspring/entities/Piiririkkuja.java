@@ -14,7 +14,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Piiririkkuja {
+public class Piiririkkuja extends BaseEntity {
 
 	private String isikukood;
 

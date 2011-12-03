@@ -4,93 +4,13 @@
 package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.PiirivalvurIntsidendis;
-import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityManager;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Version;
-import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect PiirivalvurIntsidendis_Roo_Entity {
     
     declare @type: PiirivalvurIntsidendis: @Entity;
-    
-    @PersistenceContext
-    transient EntityManager PiirivalvurIntsidendis.entityManager;
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long PiirivalvurIntsidendis.id;
-    
-    @Version
-    @Column(name = "version")
-    private Integer PiirivalvurIntsidendis.version;
-    
-    public Long PiirivalvurIntsidendis.getId() {
-        return this.id;
-    }
-    
-    public void PiirivalvurIntsidendis.setId(Long id) {
-        this.id = id;
-    }
-    
-    public Integer PiirivalvurIntsidendis.getVersion() {
-        return this.version;
-    }
-    
-    public void PiirivalvurIntsidendis.setVersion(Integer version) {
-        this.version = version;
-    }
-    
-    @Transactional
-    public void PiirivalvurIntsidendis.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void PiirivalvurIntsidendis.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            PiirivalvurIntsidendis attached = PiirivalvurIntsidendis.findPiirivalvurIntsidendis(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void PiirivalvurIntsidendis.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void PiirivalvurIntsidendis.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
-    }
-    
-    @Transactional
-    public PiirivalvurIntsidendis PiirivalvurIntsidendis.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        PiirivalvurIntsidendis merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
-    }
-    
-    public static final EntityManager PiirivalvurIntsidendis.entityManager() {
-        EntityManager em = new PiirivalvurIntsidendis().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
     
     public static long PiirivalvurIntsidendis.countPiirivalvurIntsidendises() {
         return entityManager().createQuery("SELECT COUNT(o) FROM PiirivalvurIntsidendis o", Long.class).getSingleResult();

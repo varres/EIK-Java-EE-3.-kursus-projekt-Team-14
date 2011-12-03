@@ -9,5 +9,12 @@
         <field:display field="sugu" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_sugu" object="${piiririkkuja}" z="lPArBS5R+0gcbwPLjIRrEKb81aY="/>
         <field:display date="true" dateTimePattern="${piiririkkuja_synniaeg_date_format}" field="synniaeg" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_synniaeg" object="${piiririkkuja}" z="dGk7GDFLAPozUh0sii2LCTDqPgk="/>
         <field:display field="objekt" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_objekt" object="${piiririkkuja}" z="oj8RboxVJH5eu4SMGme89jM730g="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_avaja" object="${piiririkkuja}" z="eHgUfbYHaU1SM4ABpBlB7vUR/z0="/>
+        <field:display date="true" dateTimePattern="${piiririkkuja_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_avatud" object="${piiririkkuja}" z="M0EAGK1wO2svZevtpvQ+NWa7m8c="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_muutja" object="${piiririkkuja}" z="YUcCynUUSySXP//toRlDIiNpL8E="/>
+        <field:display date="true" dateTimePattern="${piiririkkuja_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_muudetud" object="${piiririkkuja}" z="a+dyUac7ZuQx+zaxZ2D51fgaOoQ="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_sulgeja" object="${piiririkkuja}" z="NyH90jCfhsAxnJTpiTEtO89Fceg="/>
+        <field:display date="true" dateTimePattern="${piiririkkuja_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_suletud" object="${piiririkkuja}" z="NN2bRwVQDo4vfpc8zaXs98efsA0="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Piiririkkuja_kommentaar" object="${piiririkkuja}" z="8ZkWb4/15q7guFDSGPOSy7sXHsI="/>
     </page:show>
 </div>

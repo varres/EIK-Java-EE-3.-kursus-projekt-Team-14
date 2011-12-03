@@ -24,3 +24,22 @@ web mvc all --package ~.web
 web mvc all --package ~.web
 security setup
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-30 21:15:46
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-03 15:53:54
+web mvc all --package ~.web
+web mvc all --package ~.web
+web mvc all --package ~.web
+web mvc all --package ~.web
+web mvc all --package ~.web
+entity --class ~.entities.piitivalvur
+entity --class ~.entities.piirivalvurIntsidendis
+entity --class ~.entities.IsikIntsidendis
+entity --class ~.entities.Piiririkkuja
+entity --class ~.entities.VahtkondPiiriloigul
+entity --class ~.entities.IntsidendiLiik
+web mvc all --package ~.web
+web mvc all --package ~.web
+entity --class ~.entities.IntsidendiTyyp
+web mvc all --package ~.web
+web mvc all --package ~.web
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-03 23:47:20
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-03 23:48:06

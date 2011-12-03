@@ -131,6 +131,9 @@ privileged aspect PiirivalvurIntsidendisController_Roo_Controller {
     }
     
     void PiirivalvurIntsidendisController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("piirivalvurIntsidendis_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("piirivalvurIntsidendis_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("piirivalvurIntsidendis_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piirivalvurIntsidendis_alates_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("piirivalvurIntsidendis_kuni_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }

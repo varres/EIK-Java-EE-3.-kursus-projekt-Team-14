@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class VahtkondIntsidendis {
+public class VahtkondIntsidendis extends BaseEntity {
 
     @ManyToOne
     @NotNull

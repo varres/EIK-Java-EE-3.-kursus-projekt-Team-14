@@ -11,6 +11,8 @@ import java.lang.String;
 import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.joda.time.format.DateTimeFormat;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -27,6 +29,7 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
     public String IntsidendiTyypController.create(@Valid IntsidendiTyyp intsidendiTyyp, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("intsidendiTyyp", intsidendiTyyp);
+            addDateTimeFormatPatterns(uiModel);
             return "intsidendityyps/create";
         }
         uiModel.asMap().clear();
@@ -37,11 +40,13 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String IntsidendiTyypController.createForm(Model uiModel) {
         uiModel.addAttribute("intsidendiTyyp", new IntsidendiTyyp());
+        addDateTimeFormatPatterns(uiModel);
         return "intsidendityyps/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String IntsidendiTyypController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("intsidendityyp", IntsidendiTyyp.findIntsidendiTyyp(id));
         uiModel.addAttribute("itemId", id);
         return "intsidendityyps/show";
@@ -57,6 +62,7 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
         } else {
             uiModel.addAttribute("intsidendityyps", IntsidendiTyyp.findAllIntsidendiTyyps());
         }
+        addDateTimeFormatPatterns(uiModel);
         return "intsidendityyps/list";
     }
     
@@ -64,6 +70,7 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
     public String IntsidendiTyypController.update(@Valid IntsidendiTyyp intsidendiTyyp, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("intsidendiTyyp", intsidendiTyyp);
+            addDateTimeFormatPatterns(uiModel);
             return "intsidendityyps/update";
         }
         uiModel.asMap().clear();
@@ -74,6 +81,7 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String IntsidendiTyypController.updateForm(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("intsidendiTyyp", IntsidendiTyyp.findIntsidendiTyyp(id));
+        addDateTimeFormatPatterns(uiModel);
         return "intsidendityyps/update";
     }
     
@@ -89,6 +97,12 @@ privileged aspect IntsidendiTyypController_Roo_Controller {
     @ModelAttribute("intsidendityyps")
     public Collection<IntsidendiTyyp> IntsidendiTyypController.populateIntsidendiTyyps() {
         return IntsidendiTyyp.findAllIntsidendiTyyps();
+    }
+    
+    void IntsidendiTyypController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("intsidendiTyyp_avatud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("intsidendiTyyp_muudetud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("intsidendiTyyp_suletud_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String IntsidendiTyypController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

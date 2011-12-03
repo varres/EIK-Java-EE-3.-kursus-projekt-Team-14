@@ -7,5 +7,12 @@
         <field:display field="piiriloik" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_piiriloik" object="${vahtkondpiiriloigul}" z="aMqF/vc9BqTDNfgv2H64M93ucC4="/>
         <field:display date="true" dateTimePattern="${vahtkondPiiriloigul_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_alates" object="${vahtkondpiiriloigul}" z="8ilYdn/z6guP7Tm6KvRbUTXHRAU="/>
         <field:display date="true" dateTimePattern="${vahtkondPiiriloigul_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kuni" object="${vahtkondpiiriloigul}" z="htOvyPRYwJrebiYFNxEcZAbUpEE="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_avaja" object="${vahtkondpiiriloigul}" z="84RgvY1FhcOk77kyAx46e+uydrE="/>
+        <field:display date="true" dateTimePattern="${vahtkondPiiriloigul_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_avatud" object="${vahtkondpiiriloigul}" z="jSM+sd40dAAvtaD0uvDmFuS0Xjo="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_muutja" object="${vahtkondpiiriloigul}" z="lAtCBnrpTho24XaKNwnQQWcXy2c="/>
+        <field:display date="true" dateTimePattern="${vahtkondPiiriloigul_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_muudetud" object="${vahtkondpiiriloigul}" z="y69esMdkqIcxWKGq0a3eC7GTkgA="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_sulgeja" object="${vahtkondpiiriloigul}" z="jgKpJOOPjFHa+5qffIRkaPtNaFM="/>
+        <field:display date="true" dateTimePattern="${vahtkondPiiriloigul_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_suletud" object="${vahtkondpiiriloigul}" z="/JkqVSZvRHxZrBO5DUVw0Wnmy+A="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kommentaar" object="${vahtkondpiiriloigul}" z="FsUW3j2HCkQzdyHipIpNWrK8rss="/>
     </page:show>
 </div>

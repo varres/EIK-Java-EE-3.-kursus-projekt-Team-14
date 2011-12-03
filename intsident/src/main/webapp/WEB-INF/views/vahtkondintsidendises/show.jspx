@@ -8,5 +8,12 @@
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" object="${vahtkondintsidendis}" z="Tye+ShsImAfOHbRz+En2IMro3d8="/>
         <field:display date="true" dateTimePattern="${vahtkondIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_alates" object="${vahtkondintsidendis}" z="rYMpTraBFea1cTDX1wmSOfC7EnE="/>
         <field:display date="true" dateTimePattern="${vahtkondIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kuni" object="${vahtkondintsidendis}" z="WU2kxRA5mFNvcs9EpARzQhn2w2E="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_avaja" object="${vahtkondintsidendis}" z="8sNaqt0CEr2kYagtB+B/zD72bOI="/>
+        <field:display date="true" dateTimePattern="${vahtkondIntsidendis_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_avatud" object="${vahtkondintsidendis}" z="BnOn3l/hePWDspe+UFNVy23uRiU="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_muutja" object="${vahtkondintsidendis}" z="1Q7ReJUCRgL771eTJvYeX+soxLs="/>
+        <field:display date="true" dateTimePattern="${vahtkondIntsidendis_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_muudetud" object="${vahtkondintsidendis}" z="TpWY/K5yb4hA/ivB/0etP2DLfxo="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_sulgeja" object="${vahtkondintsidendis}" z="jiJK3keiFWBpCm0TmL95i+DPCi8="/>
+        <field:display date="true" dateTimePattern="${vahtkondIntsidendis_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_suletud" object="${vahtkondintsidendis}" z="N7G1HS+6OKnOuAl9zcZLvpjmtGo="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" object="${vahtkondintsidendis}" z="LAPvwaQMHII5Ie3kKJkOAKPaB94="/>
     </page:show>
 </div>

@@ -6,5 +6,12 @@
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_kood" required="true" z="UVEV3NhF8+nMa7inRPKIxZe0d9I="/>
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_nimetus" required="true" z="l7nEZd8nKWC3MDpkYbAixyeB2wc="/>
         <field:input field="GPS_koordinaadid" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_GPS_koordinaadid" required="true" z="o/mN6F/8FIsVsCwqGglXZI9D2C8="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_avaja" z="9yQ+TNavLmThiYu1D3mIDoIS66Y="/>
+        <field:datetime dateTimePattern="${piiriloik_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_avatud" z="H0uvZSCzhStm9yv6KlpOTRQmBH8="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_muutja" z="0RtmSAyzIJWW0wHxTpybb4dtC4k="/>
+        <field:datetime dateTimePattern="${piiriloik_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_muudetud" z="mV4lEUReTD0ftNvooAHuuV7bby8="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_sulgeja" z="rIQ7hdQ9r8P2oCKtBNt+5D9bY18="/>
+        <field:datetime dateTimePattern="${piiriloik_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_suletud" z="Phz7BKt1hydexUvXa3khoiqHvrY="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_kommentaar" z="VzgAIOLjMGSulDV8oqD5acDKHxc="/>
     </form:update>
 </div>

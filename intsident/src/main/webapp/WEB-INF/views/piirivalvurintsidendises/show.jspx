@@ -9,5 +9,12 @@
         <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_alates" object="${piirivalvurintsidendis}" z="88872JJBnHl7wEpHVkBgMxvYdV0="/>
         <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kuni" object="${piirivalvurintsidendis}" z="kUsfk9ggtpl903kdXnCARSGBBvo="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kirjeldus" object="${piirivalvurintsidendis}" z="p5JSrrD4Uvak5ni8Y1bE738g0JY="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_avaja" object="${piirivalvurintsidendis}" z="NDr1edAiJa3cO9E4rVUdL94MRD8="/>
+        <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_avatud" object="${piirivalvurintsidendis}" z="Gv2frhydUdfVDxhvla5hxS2UBSk="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_muutja" object="${piirivalvurintsidendis}" z="pYqdx2Hv/xL2/NxFGFMKNABCOcM="/>
+        <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_muudetud" object="${piirivalvurintsidendis}" z="f7ky3rbynB3MJEwSOwgA2rSX3UU="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_sulgeja" object="${piirivalvurintsidendis}" z="WMqQrTm6d2xgr+fxgzQopOhtR1k="/>
+        <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_suletud" object="${piirivalvurintsidendis}" z="Y/ziBB8kroByTfF02W8kPFy4Yog="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kommentaar" object="${piirivalvurintsidendis}" z="mBMgOZDk0zfaOAOx3B7fDpSd0b8="/>
     </page:show>
 </div>

@@ -47,5 +47,9 @@
             <menu:item id="i_intsidendityyp_new" messageCode="global_menu_new" url="/intsidendityyps?form" z="mmvnEhhIn8ETF+QorniUZBZ9j4M="/>
             <menu:item id="i_intsidendityyp_list" messageCode="global_menu_list" url="/intsidendityyps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Kqpyxam+xn5J+fqMGsUXDsRhmAs="/>
         </menu:category>
+        <menu:category id="c_piirivalvur" z="sGXZ4GwwZtbGylRvbUXZI4kvKZs=">
+            <menu:item id="i_piirivalvur_new" messageCode="global_menu_new" url="/piirivalvurs?form" z="HRvdB2pvoLqTAPhuPDRzOsT/HpE="/>
+            <menu:item id="i_piirivalvur_list" messageCode="global_menu_list" url="/piirivalvurs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sy0TKZS9L9wBaTTNXcAXixPtYHw="/>
+        </menu:category>
     </menu:menu>
 </div>

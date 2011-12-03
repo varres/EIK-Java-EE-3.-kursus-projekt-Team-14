@@ -4,12 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_Piiririkkuja" items="${piiririkkujas}" z="6ctb/APGNBikJx9hL/18GPBO+r0=">
         <table:table data="${piiririkkujas}" id="l_ee_itcollege_intsidentspring_entities_Piiririkkuja" path="/piiririkkujas" z="+AXHBFcH8R5GDyOdYLxwMEFNPw0=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_isikukood" property="isikukood" z="C6uWyy9fTGw1f10Zkqxb0G4R8Y4="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_eesnimi" property="eesnimi" z="CyFCdvGX6UNsUZzdH2HJao2hP6A="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_perenimi" property="perenimi" z="njJ5JCdT7xKmNeSOlipafSgnACA="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_sugu" property="sugu" z="ACAzYvphnb+B/AgG0SsAPqtLvYs="/>
-            <table:column date="true" dateTimePattern="${piiririkkuja_synniaeg_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_synniaeg" property="synniaeg" z="vaJMl3up8w93XERfv8oDAyGd2CM="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_objekt" property="objekt" z="Cs8iZtj9ahcFeHn1Igf7MCQGa+Q="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_avaja" property="avaja" z="Hoeffqbr9gkF7muZqerRlRi+LcQ="/>
+            <table:column date="true" dateTimePattern="${piiririkkuja_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_avatud" property="avatud" z="/XAPBQpz6MDkecn0QdRW6NNJn8E="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_muutja" property="muutja" z="iN/v8Cwws/HCjIH/n+QCG5CEblQ="/>
+            <table:column date="true" dateTimePattern="${piiririkkuja_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_muudetud" property="muudetud" z="7KBvdqbImfvr4/dghIpoCYytsN8="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_sulgeja" property="sulgeja" z="OvVDTGlly9/63CHU+q3ZPaJqyCk="/>
+            <table:column date="true" dateTimePattern="${piiririkkuja_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piiririkkuja_suletud" property="suletud" z="BphneZwj1E9RLvo5zL/xcv74cZY="/>
         </table:table>
     </page:list>
 </div>

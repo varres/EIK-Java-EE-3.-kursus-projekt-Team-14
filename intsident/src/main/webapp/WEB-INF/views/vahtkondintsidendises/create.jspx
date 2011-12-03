@@ -8,6 +8,13 @@
         <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" required="true" z="NUmPF43va1CCk51V+laR7BoPYYo="/>
         <field:datetime dateTimePattern="${vahtkondIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_alates" required="true" z="MDVWw8lQjxaoU3aMC79sovfgZ0c="/>
         <field:datetime dateTimePattern="${vahtkondIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kuni" required="true" z="Y5s2UvizMGyIiaWM1WHETICsKbM="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_avaja" z="xLWnMk39awySRFPQSZlUFcuPeSo="/>
+        <field:datetime dateTimePattern="${vahtkondIntsidendis_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_avatud" z="enS/X+HRGtv0meJPxqzemEyiz+g="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_muutja" z="2o4S8oME/ektEb413+Pntn5o0e8="/>
+        <field:datetime dateTimePattern="${vahtkondIntsidendis_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_muudetud" z="GhTB7qWiZNcr4IznXdUHdyy3G2k="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_sulgeja" z="NZ+UHxAlQvCb8Y+nBCwAXtWoQk0="/>
+        <field:datetime dateTimePattern="${vahtkondIntsidendis_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_suletud" z="nhsGBxP2+Mkk32zboBYbiOYQ9hY="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" z="vqW+hDT2DPfDVvk37C7Z3i76FN8="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" render="${not empty dependencies}" z="vtdA3wWOJ/mO4cyPkgBbaFjLXpE="/>
 </div>

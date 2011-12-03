@@ -12,5 +12,12 @@
         <field:input field="GPS_latituud" id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" z="lysAPHD+0yKDya+FEggYvRH8KHQ="/>
         <field:select field="piiriloik" id="c_ee_itcollege_intsidentspring_entities_Intsident_piiriloik" itemValue="id" items="${piiriloiks}" path="/piiriloiks" required="true" z="aq9MlW3alqQsiwFvcqSj1HZy8HY="/>
         <field:select field="intsidendiTyyp" id="c_ee_itcollege_intsidentspring_entities_Intsident_intsidendiTyyp" itemValue="id" items="${intsidendityyps}" path="/intsidendityyps" required="true" z="KRH6x4wWL345pU75zFuha8iQkl4="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Intsident_avaja" z="s+TWbeSMxxIyTGvFDyWv4J3HwOo="/>
+        <field:datetime dateTimePattern="${intsident_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Intsident_avatud" z="YgJZTJXbTwgxdsPTwAI8+qAvvwc="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Intsident_muutja" z="ES2s9oOGSjQM0lYyo/0izXTup4g="/>
+        <field:datetime dateTimePattern="${intsident_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Intsident_muudetud" z="ovFRFrmB0MkGY+t2kCJBppDmZwA="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Intsident_sulgeja" z="Zy0/a1G43i9lfnOMR3y6lRRC9SA="/>
+        <field:datetime dateTimePattern="${intsident_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Intsident_suletud" z="ffIYsnVKcJX4nYvfs20y4Dy1jhA="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Intsident_kommentaar" z="lGw6a5KhHWbWhJvgfspaUoobf1o="/>
     </form:update>
 </div>

@@ -4,93 +4,13 @@
 package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
-import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityManager;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Version;
-import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect IntsidendiTyyp_Roo_Entity {
     
     declare @type: IntsidendiTyyp: @Entity;
-    
-    @PersistenceContext
-    transient EntityManager IntsidendiTyyp.entityManager;
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long IntsidendiTyyp.id;
-    
-    @Version
-    @Column(name = "version")
-    private Integer IntsidendiTyyp.version;
-    
-    public Long IntsidendiTyyp.getId() {
-        return this.id;
-    }
-    
-    public void IntsidendiTyyp.setId(Long id) {
-        this.id = id;
-    }
-    
-    public Integer IntsidendiTyyp.getVersion() {
-        return this.version;
-    }
-    
-    public void IntsidendiTyyp.setVersion(Integer version) {
-        this.version = version;
-    }
-    
-    @Transactional
-    public void IntsidendiTyyp.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void IntsidendiTyyp.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            IntsidendiTyyp attached = IntsidendiTyyp.findIntsidendiTyyp(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void IntsidendiTyyp.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void IntsidendiTyyp.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
-    }
-    
-    @Transactional
-    public IntsidendiTyyp IntsidendiTyyp.merge() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        IntsidendiTyyp merged = this.entityManager.merge(this);
-        this.entityManager.flush();
-        return merged;
-    }
-    
-    public static final EntityManager IntsidendiTyyp.entityManager() {
-        EntityManager em = new IntsidendiTyyp().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
     
     public static long IntsidendiTyyp.countIntsidendiTyyps() {
         return entityManager().createQuery("SELECT COUNT(o) FROM IntsidendiTyyp o", Long.class).getSingleResult();

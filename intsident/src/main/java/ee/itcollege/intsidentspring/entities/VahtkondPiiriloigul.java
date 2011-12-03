@@ -13,7 +13,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class VahtkondPiiriloigul {
+public class VahtkondPiiriloigul extends BaseEntity {
 	
 	@ManyToOne
 	@NotNull

@@ -5,5 +5,12 @@
     <page:show id="ps_ee_itcollege_intsidentspring_entities_IntsidendiTyyp" object="${intsidendityyp}" path="/intsidendityyps" z="bhHJBiYjoQdnQqO4zJN4kTfh9lw=">
         <field:display field="kood" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_kood" object="${intsidendityyp}" z="cdTWs8mGXuf/Mh2JEJN7k44kmBw="/>
         <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_nimetus" object="${intsidendityyp}" z="vLZAeWZ5aKhEFgTR6GAlcjk8xoI="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avaja" object="${intsidendityyp}" z="SVwTUeN6XPbs2RGLvL4MHvbVsEw="/>
+        <field:display date="true" dateTimePattern="${intsidendiTyyp_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avatud" object="${intsidendityyp}" z="emNqtVEA0niTWh7qAT+KCpzulzY="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muutja" object="${intsidendityyp}" z="j4XHTaGhfzF1NAW7yWvBigzryw8="/>
+        <field:display date="true" dateTimePattern="${intsidendiTyyp_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muudetud" object="${intsidendityyp}" z="VK9B5Ar4LTM5DhCmVF3yWtlgisc="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_sulgeja" object="${intsidendityyp}" z="3UiCXld5fMResKQZX61PItVGCDQ="/>
+        <field:display date="true" dateTimePattern="${intsidendiTyyp_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_suletud" object="${intsidendityyp}" z="ncDgQULOzN5TR+c4In6fewSSwB4="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_kommentaar" object="${intsidendityyp}" z="ZO9i/rZFX9Tz8GZTV6pRhKtOa88="/>
     </page:show>
 </div>

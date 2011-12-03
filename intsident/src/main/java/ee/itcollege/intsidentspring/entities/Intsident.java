@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Intsident  {
+public class Intsident extends BaseEntity {
 	
 	@NotNull
 	private String kood;

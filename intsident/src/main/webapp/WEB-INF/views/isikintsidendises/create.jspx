@@ -8,6 +8,13 @@
         <field:datetime dateTimePattern="${isikIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_alates" required="true" z="kFM29RmcXIetg5szaBum4SRLL3U="/>
         <field:datetime dateTimePattern="${isikIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kuni" required="true" z="EtpeZKpwNdns/yacj1Dp+t6UGXc="/>
         <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kirjeldus" required="true" z="IyT130ULrHgaZhn/McWGrEBKOA0="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avaja" z="QuKLm7+364nQ01+HGKKqJFdo28I="/>
+        <field:datetime dateTimePattern="${isikIntsidendis_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avatud" z="jDusdyrvBF80szbIQkK5NCi/j/8="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muutja" z="q1/mIDhlKMLJ/ZG/nj+rNEc6C9A="/>
+        <field:datetime dateTimePattern="${isikIntsidendis_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muudetud" z="5VsqyE3UlVWr8CIp9BOTC7G+3A8="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_sulgeja" z="/C1adNf2/SEFrOil/7gRs12iNiw="/>
+        <field:datetime dateTimePattern="${isikIntsidendis_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_suletud" z="lgHDzsp9Prm7jec5PtY79kdf1Z4="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kommentaar" z="u9FwR0gj6RWZmXs11kOKo014LcU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_IsikIntsidendis" render="${not empty dependencies}" z="AYTZtY4mpizb3Mv9R0QWKCHIEZw="/>
 </div>

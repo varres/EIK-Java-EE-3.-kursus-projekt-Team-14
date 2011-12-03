@@ -6,5 +6,12 @@
         <field:display field="kood" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_kood" object="${piiriloik}" z="y20Akr1b8NVz/due2OgBPjAsEFE="/>
         <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_nimetus" object="${piiriloik}" z="NJC8Gf2IQijQK38plBdwxn2mdQ0="/>
         <field:display field="GPS_koordinaadid" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_GPS_koordinaadid" object="${piiriloik}" z="afXIeT+8KDG3MU72N+wpT2UUUPU="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_avaja" object="${piiriloik}" z="s5LBoQ7z+jognfeSTe/C5nWbLNA="/>
+        <field:display date="true" dateTimePattern="${piiriloik_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_avatud" object="${piiriloik}" z="DVNS/UE2zk2IM7ADunqLJOvbqQI="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_muutja" object="${piiriloik}" z="6UNmSzwAVzANeq717LjgMqDINfE="/>
+        <field:display date="true" dateTimePattern="${piiriloik_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_muudetud" object="${piiriloik}" z="xtqqgcMpdhmsOhlUmundQ8PCASY="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_sulgeja" object="${piiriloik}" z="5LI5BF3xH1XTpvJhN170VuOVmrY="/>
+        <field:display date="true" dateTimePattern="${piiriloik_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_suletud" object="${piiriloik}" z="QORZg7RxY8oLAsyvfDQFkRM2RLc="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Piiriloik_kommentaar" object="${piiriloik}" z="3N4hhFz3BY3gVnzxjg1LkvmlqPA="/>
     </page:show>
 </div>

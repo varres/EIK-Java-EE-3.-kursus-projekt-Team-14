@@ -8,5 +8,12 @@
         <field:display date="true" dateTimePattern="${isikIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_alates" object="${isikintsidendis}" z="4wMzHrQdbVAwOpU0FgjUny/Cono="/>
         <field:display date="true" dateTimePattern="${isikIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kuni" object="${isikintsidendis}" z="mGQAXeadt7jHH1Pv+R+VIpuCfV8="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kirjeldus" object="${isikintsidendis}" z="1QNuzgYGXXrpH2sFbyHGSdaEZTU="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avaja" object="${isikintsidendis}" z="pMBEsPG5u2SnaEpzbr+KmzNUq0g="/>
+        <field:display date="true" dateTimePattern="${isikIntsidendis_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avatud" object="${isikintsidendis}" z="obKiZLVabImtjUQxmBmejcAsVR8="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muutja" object="${isikintsidendis}" z="+2SUFzeY8SH0ezd5h8s34JvnkdA="/>
+        <field:display date="true" dateTimePattern="${isikIntsidendis_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muudetud" object="${isikintsidendis}" z="JOOnv0gGtNnmLr3kjT2P9XZaveU="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_sulgeja" object="${isikintsidendis}" z="PU54VO0kZMKJFHO9Qanp5MR3BUc="/>
+        <field:display date="true" dateTimePattern="${isikIntsidendis_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_suletud" object="${isikintsidendis}" z="Qi+YzDtoCPeyBxeETt+4mrMAhAw="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kommentaar" object="${isikintsidendis}" z="noW2GXM5ZAfcxXHrGGIfmkwR6hk="/>
     </page:show>
 </div>

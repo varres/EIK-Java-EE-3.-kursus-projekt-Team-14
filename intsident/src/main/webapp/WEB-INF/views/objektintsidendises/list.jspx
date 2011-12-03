@@ -4,11 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" items="${objektintsidendises}" z="uQFJ3NzIk11NC8a9w01iJpiPKBA=">
         <table:table data="${objektintsidendises}" id="l_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" path="/objektintsidendises" z="fFf0liMs756qqmqfgKpFNgSif2U=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_objekt" property="objekt" z="GwOUfTgYOWpb7Y7g0sVbC6QNSzA="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_intsident" property="intsident" z="dt2HqvydPnfmjpvfLMypHMY3xbM="/>
-            <table:column date="true" dateTimePattern="${objektIntsidendis_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_alates" property="alates" z="bRVn45BcI5JA66sTVlSwvWxq/I8="/>
-            <table:column date="true" dateTimePattern="${objektIntsidendis_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kuni" property="kuni" z="DkZcaoGuDeeNhMSd638ZEy7f/ag="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kirjeldus" property="kirjeldus" z="8ogien2mtDGLsRIDaRDXydVMfjg="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_avaja" property="avaja" z="GU5BYeo/RC/DNbG1jHWAFFBpx8E="/>
+            <table:column date="true" dateTimePattern="${objektIntsidendis_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_avatud" property="avatud" z="BMsQ16FutNLUuxZaQJyyikHWJJk="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_muutja" property="muutja" z="YV1WVeG/6DKq0G4G8IW5nS9jCpQ="/>
+            <table:column date="true" dateTimePattern="${objektIntsidendis_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_muudetud" property="muudetud" z="oTYx/+6K+58ra37pnA6IkyDiPU8="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_sulgeja" property="sulgeja" z="iCdgH8qjmFkeCPrhURmkUMQgktk="/>
+            <table:column date="true" dateTimePattern="${objektIntsidendis_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_suletud" property="suletud" z="mWdQwoi/CksW/6zUpM7bqYWMasw="/>
         </table:table>
     </page:list>
 </div>

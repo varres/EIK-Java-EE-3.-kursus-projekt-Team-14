@@ -4,11 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_IsikIntsidendis" items="${isikintsidendises}" z="XlB8ILADr1wmSCjrRiOkR/XeRmg=">
         <table:table data="${isikintsidendises}" id="l_ee_itcollege_intsidentspring_entities_IsikIntsidendis" path="/isikintsidendises" z="xpLihiN5An8HzBDOczWWtnzzleY=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_intsident" property="intsident" z="Tv093e4NoDLiz39mXe4jsUcguLo="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_piiririkkuja" property="piiririkkuja" z="jG/2xID8nHTHQny8cVqAjLOdERY="/>
-            <table:column date="true" dateTimePattern="${isikIntsidendis_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_alates" property="alates" z="JjnGDkUSS1jlozmVhTspxB1qR8s="/>
-            <table:column date="true" dateTimePattern="${isikIntsidendis_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kuni" property="kuni" z="tgIe9yU6GvsAsLcH7mqN9FlNwn8="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kirjeldus" property="kirjeldus" z="fm+6gkS2Jth9qjwtkfP9myC8Lp8="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avaja" property="avaja" z="VgHBn3nY0q0P+9Gi7Tkcbc4F4dk="/>
+            <table:column date="true" dateTimePattern="${isikIntsidendis_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_avatud" property="avatud" z="d1s+/G1M0tjOtxzWCEEuN4+zyOo="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muutja" property="muutja" z="glQZ+2EImGIquVw6UE9wYt76I68="/>
+            <table:column date="true" dateTimePattern="${isikIntsidendis_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_muudetud" property="muudetud" z="aLdfaCIedCQqdvJZCXMlG6ElJ2o="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_sulgeja" property="sulgeja" z="vEB7x9/qjGuvydBtiXpl3yEJcT8="/>
+            <table:column date="true" dateTimePattern="${isikIntsidendis_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_suletud" property="suletud" z="nWesPNoJVETtzo6zkgznhcStsiQ="/>
         </table:table>
     </page:list>
 </div>

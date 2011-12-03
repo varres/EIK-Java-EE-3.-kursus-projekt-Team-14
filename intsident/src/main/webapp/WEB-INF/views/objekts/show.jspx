@@ -4,5 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_intsidentspring_entities_Objekt" object="${objekt}" path="/objekts" z="p89LC0dZPzv/Jma5RTsdOb+eGB8=">
         <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_Objekt_nimetus" object="${objekt}" z="+kP99fAr1ZFuIvVURlKo4YsZ9Fs="/>
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_Objekt_avaja" object="${objekt}" z="MRWb0/peob2S24ki7xGyJhHdGT8="/>
+        <field:display date="true" dateTimePattern="${objekt_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_Objekt_avatud" object="${objekt}" z="tGEV5P4GY+UEC9sZSB3oJ59QRi4="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_Objekt_muutja" object="${objekt}" z="pHolEMi1VxkoyG2NsDyaciRsC1g="/>
+        <field:display date="true" dateTimePattern="${objekt_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_Objekt_muudetud" object="${objekt}" z="JuR+uNA1Es9rvMUhTKCI3c7Dbo4="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Objekt_sulgeja" object="${objekt}" z="RwdNLP8H2wnQk8+dPTSBzuFZiOQ="/>
+        <field:display date="true" dateTimePattern="${objekt_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Objekt_suletud" object="${objekt}" z="EBNr50NxJWn7mgRETDWAr3uyO5o="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Objekt_kommentaar" object="${objekt}" z="ffzNL7QdQS+dKmzcxabZXxlUp/E="/>
     </page:show>
 </div>

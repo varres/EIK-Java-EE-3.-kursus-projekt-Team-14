@@ -3,10 +3,17 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul" modelAttribute="vahtkondPiiriloigul" path="/vahtkondpiiriloiguls" render="${empty dependencies}" z="JhTrTvNEt548kGMS3otshw7oBME=">
-        <field:input field="vahtkond" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_vahtkond" required="true" z="WkaxRVdlZpu2Jkhl3mcF2LO3Sng="/>
+        <field:select field="vahtkond" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_vahtkond" itemValue="id" items="${vahtkonds}" path="/vahtkonds" required="true" z="Pe/lJjL1GLQuZIT/TIp+N4J5z3o="/>
         <field:select field="piiriloik" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_piiriloik" itemValue="id" items="${piiriloiks}" path="/piiriloiks" required="true" z="SieyDhTu/VIOvBKWINzgox8swAo="/>
         <field:datetime dateTimePattern="${vahtkondPiiriloigul_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_alates" required="true" z="gqWdNnPBOegsNpRPf9+7cxTKmi4="/>
         <field:datetime dateTimePattern="${vahtkondPiiriloigul_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kuni" required="true" z="dFyowLlufXj8JDDBmfTcuM3iXDk="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_avaja" z="z7cxC2j39Okw6FTYAJ/VMOue8D0="/>
+        <field:datetime dateTimePattern="${vahtkondPiiriloigul_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_avatud" z="SOBaFrO0CTOFuIvlEgj3lheVvFw="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_muutja" z="zTFIZMIeQX7ElZHAhB27pRLcbUs="/>
+        <field:datetime dateTimePattern="${vahtkondPiiriloigul_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_muudetud" z="YcQ1uS580auIzjm6HXCm+6gQ7BU="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_sulgeja" z="rPrMaw1b68raTOnIKMk+awEgPv0="/>
+        <field:datetime dateTimePattern="${vahtkondPiiriloigul_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_suletud" z="keSzO9sG8Eyl3/J1jFFY/IS/qso="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kommentaar" z="AJD5fOyuCMLu4zZ4NbIcls2qx90="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul" render="${not empty dependencies}" z="sqLZUnDl96Y3SdGUt6/qiGavg3Y="/>
 </div>

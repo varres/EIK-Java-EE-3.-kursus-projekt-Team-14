@@ -9,14 +9,21 @@ privileged aspect Intsident_Roo_ToString {
     
     public String Intsident.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("Avaja: ").append(getAvaja()).append(", ");
+        sb.append("Avatud: ").append(getAvatud()).append(", ");
         sb.append("GPS_latituud: ").append(getGPS_latituud()).append(", ");
         sb.append("GPS_longituud: ").append(getGPS_longituud()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("IntsidendiTyyp: ").append(getIntsidendiTyyp()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
+        sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");
+        sb.append("Muudetud: ").append(getMuudetud()).append(", ");
+        sb.append("Muutja: ").append(getMuutja()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("Piiriloik: ").append(getPiiriloik()).append(", ");
+        sb.append("Suletud: ").append(getSuletud()).append(", ");
+        sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("Toimumise_algus: ").append(getToimumise_algus()).append(", ");
         sb.append("Toimumise_lopp: ").append(getToimumise_lopp()).append(", ");
         sb.append("Version: ").append(getVersion());

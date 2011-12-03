@@ -5,6 +5,13 @@
     <form:create id="fc_ee_itcollege_intsidentspring_entities_IntsidendiTyyp" modelAttribute="intsidendiTyyp" path="/intsidendityyps" render="${empty dependencies}" z="cOO4uwiJAmWYS9j4H1qLLVKp0wA=">
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_kood" required="true" z="xcRIlmK67SXxLO8HvVZcf0dfPJ0="/>
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_nimetus" required="true" z="Qu0xRIy4weZ6Dto/6E4vN7vZm4E="/>
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avaja" z="+QAhPzBdsrXv4Meu4I4U6Gqx0Aw="/>
+        <field:datetime dateTimePattern="${intsidendiTyyp_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avatud" z="jTWDAdQIDAa1rfsGYO+H9L7Il10="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muutja" z="5dgcLMDkfSds/VR+Mk8ELsbAs5Y="/>
+        <field:datetime dateTimePattern="${intsidendiTyyp_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muudetud" z="7RCJ+al8ZL3vrPTBH7yWy3nd51U="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_sulgeja" z="frtW34hcsZgdogLO+qpMa6NwQe0="/>
+        <field:datetime dateTimePattern="${intsidendiTyyp_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_suletud" z="LZO7ZCCox0RjMg+6V5eO/tSHhqw="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_kommentaar" z="D8lZtpYR968kb66fRDjj1VkX+Iw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_IntsidendiTyyp" render="${not empty dependencies}" z="YRw7ZxT7/X0TiFbX383L0eXjoCs="/>
 </div>

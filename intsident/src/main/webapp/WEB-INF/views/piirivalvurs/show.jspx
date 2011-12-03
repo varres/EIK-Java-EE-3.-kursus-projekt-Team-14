@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_intsidentspring_entities_Piirivalvur" object="${piirivalvur}" path="/piirivalvurs" z="bc3lQUQsQyQaEl9elH7Obw/qpjg=">
+        <field:display field="avaja" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_avaja" object="${piirivalvur}" z="kHHAV2fSx7Zi/UkMoghW5DPVxQk="/>
+        <field:display date="true" dateTimePattern="${piirivalvur_avatud_date_format}" field="avatud" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_avatud" object="${piirivalvur}" z="D5XzbZnGnskpscYN9YP36ewWPkA="/>
+        <field:display field="muutja" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_muutja" object="${piirivalvur}" z="G3kvm0oJLNH0myEwFVLUYljGN3w="/>
+        <field:display date="true" dateTimePattern="${piirivalvur_muudetud_date_format}" field="muudetud" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_muudetud" object="${piirivalvur}" z="z6PAlWzToBbnpdkQA5C5YEvLhLE="/>
+        <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" object="${piirivalvur}" z="4FZ4DrIAO0q1s2cyVvYTyr4k5aQ="/>
+        <field:display date="true" dateTimePattern="${piirivalvur_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" object="${piirivalvur}" z="i54x3MdQotpeR2KlUsE6ask3xUk="/>
+        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_kommentaar" object="${piirivalvur}" z="ZdtvUnuOn9FZOaqGeum7QNxcakg="/>
+    </page:show>
+</div>

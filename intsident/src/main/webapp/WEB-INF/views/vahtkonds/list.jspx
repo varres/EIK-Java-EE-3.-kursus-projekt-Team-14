@@ -4,10 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_Vahtkond" items="${vahtkonds}" z="KOIM8yxGnodmZ5iYSXLXYnHO7bk=">
         <table:table data="${vahtkonds}" id="l_ee_itcollege_intsidentspring_entities_Vahtkond" path="/vahtkonds" z="uXRikawuWisw5XOsekh2ZZWEZ3I=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_nimetus" property="nimetus" z="WkilVPkIEilMXx1rYjSa1pUOfd0="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kood" property="kood" z="8ZHnZ7kKIW4Ks8hy5oUp/V6DKXo="/>
-            <table:column date="true" dateTimePattern="${vahtkond_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_alates" property="alates" z="MUsS6ZWYX4dupfCePi+d12d9dk8="/>
-            <table:column date="true" dateTimePattern="${vahtkond_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" property="kuni" z="s4nhbw9DnQRfLG/QlGms9wjvBAQ="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_avaja" property="avaja" z="625DX2yAbABTGmJFf1THSCwl9RM="/>
+            <table:column date="true" dateTimePattern="${vahtkond_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_avatud" property="avatud" z="nld6h6QJzzEdWbFwaAMEv13a/Yw="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_muutja" property="muutja" z="3uoBV1WmdCQoHpeKYetv3U9SFzI="/>
+            <table:column date="true" dateTimePattern="${vahtkond_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_muudetud" property="muudetud" z="v2Y0mO3S/bUScgxUfzzugo149oU="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_sulgeja" property="sulgeja" z="5mz1cbNsSW6dQWorJmNOZ0L+ogs="/>
+            <table:column date="true" dateTimePattern="${vahtkond_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_suletud" property="suletud" z="UiPSiEPNoLl7AARxKchyhJgHzjw="/>
         </table:table>
     </page:list>
 </div>

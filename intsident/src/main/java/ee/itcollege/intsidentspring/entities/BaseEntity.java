@@ -11,29 +11,82 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
-
-
 @MappedSuperclass
 @RooToString
-@Transactional
 @RooEntity(mappedSuperclass = true)
 public abstract class BaseEntity {
 
-	private String avaja;
+	public String getAvaja() {
+		return avaja;
+	}
+
+	public void setAvaja(String avaja) {
+		this.avaja = avaja;
+	}
+
+	public Date getAvatud() {
+		return avatud;
+	}
+
+	public void setAvatud(Date avatud) {
+		this.avatud = avatud;
+	}
+
+	public String getMuutja() {
+		return muutja;
+	}
+
+	public void setMuutja(String muutja) {
+		this.muutja = muutja;
+	}
+
+	public Date getMuudetud() {
+		return muudetud;
+	}
+
+	public void setMuudetud(Date muudetud) {
+		this.muudetud = muudetud;
+	}
+
+	public String getSulgeja() {
+		return sulgeja;
+	}
+
+	public void setSulgeja(String sulgeja) {
+		this.sulgeja = sulgeja;
+	}
+
+	public Date getSuletud() {
+		return suletud;
+	}
+
+	public void setSuletud(Date suletud) {
+		this.suletud = suletud;
+	}
+
+	public String getKommentaar() {
+		return kommentaar;
+	}
+
+	public void setKommentaar(String kommentaar) {
+		this.kommentaar = kommentaar;
+	}
+
+	public String avaja;
 
 	@DateTimeFormat(style = "M-")
-	private Date avatud;
+	public Date avatud;
 
-	private String muutja;
-
-	@DateTimeFormat(style = "M-")
-	private Date muudetud;
-
-	private String sulgeja;
+	public String muutja;
 
 	@DateTimeFormat(style = "M-")
-	private Date suletud;
+	public Date muudetud;
+
+	public String sulgeja;
+
+	@DateTimeFormat(style = "M-")
+	public Date suletud;
 	
-	private String kommentaar;
+	public String kommentaar;
 	
 }

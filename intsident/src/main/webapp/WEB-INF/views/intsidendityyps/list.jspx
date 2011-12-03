@@ -4,8 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ee_itcollege_intsidentspring_entities_IntsidendiTyyp" items="${intsidendityyps}" z="WqQUnNlNe7dqHQaeo1JLZU3+xuY=">
         <table:table data="${intsidendityyps}" id="l_ee_itcollege_intsidentspring_entities_IntsidendiTyyp" path="/intsidendityyps" z="hr0ftiS+N0re/8P+BIjdA3eCA7o=">
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_kood" property="kood" z="kjC8ie6ApT1a540HVsrCKZT3SRU="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_nimetus" property="nimetus" z="EJSiP+/Fz3LHeUuq1Y5lotilbo4="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avaja" property="avaja" z="UhCXZvt1PQEsrPxhhQnpkRkNPFg="/>
+            <table:column date="true" dateTimePattern="${intsidendiTyyp_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_avatud" property="avatud" z="/ZX6Obe4Z+/KMneFcpiKl2PZv/4="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muutja" property="muutja" z="FWoIioU+S3hWSvcqOmGy9TnUbaU="/>
+            <table:column date="true" dateTimePattern="${intsidendiTyyp_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_muudetud" property="muudetud" z="OWOoAk2D+MNKkEPsImyyaqoNnqc="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_sulgeja" property="sulgeja" z="ACNPH8TjMj9P1wkTfhN8Lyh1S1k="/>
+            <table:column date="true" dateTimePattern="${intsidendiTyyp_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_IntsidendiTyyp_suletud" property="suletud" z="tCNgQveOWnkrT2+YbXRdIonBQLk="/>
         </table:table>
     </page:list>
 </div>

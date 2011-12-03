@@ -7,5 +7,5 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Piirivalvur {
+public class Piirivalvur extends BaseEntity {
 }
