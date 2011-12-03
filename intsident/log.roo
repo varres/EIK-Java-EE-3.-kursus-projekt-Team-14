@@ -23,3 +23,4 @@ entity --class ~.entities.Piiriloik
 web mvc all --package ~.web
 web mvc all --package ~.web
 security setup
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-30 21:15:46
