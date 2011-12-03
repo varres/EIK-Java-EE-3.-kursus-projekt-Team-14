@@ -3,7 +3,7 @@
 
 package ee.itcollege.intsidentspring.web;
 
-import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
+import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
 import ee.itcollege.intsidentspring.entities.Intsident;
 import ee.itcollege.intsidentspring.entities.IsikIntsidendis;
 import ee.itcollege.intsidentspring.entities.Objekt;
@@ -21,7 +21,7 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(new IntsidendiLiikConverter());
+        registry.addConverter(new IntsidendiTyypConverter());
         registry.addConverter(new IntsidentConverter());
         registry.addConverter(new IsikIntsidendisConverter());
         registry.addConverter(new ObjektConverter());
@@ -39,9 +39,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         installLabelConverters(getObject());
     }
     
-    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.IntsidendiLiikConverter implements Converter<IntsidendiLiik, String> {
-        public String convert(IntsidendiLiik intsidendiLiik) {
-            return new StringBuilder().append(intsidendiLiik.getKood()).append(" ").append(intsidendiLiik.getNimetus()).toString();
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.IntsidendiTyypConverter implements Converter<IntsidendiTyyp, String> {
+        public String convert(IntsidendiTyyp intsidendiTyyp) {
+            return new StringBuilder().append(intsidendiTyyp.getKood()).append(" ").append(intsidendiTyyp.getNimetus()).toString();
         }
         
     }

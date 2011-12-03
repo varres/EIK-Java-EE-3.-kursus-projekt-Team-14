@@ -11,7 +11,7 @@
         <field:input field="GPS_longituud" id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" z="lLu6Q9jk5AM6ZwUywMhWurZAUtg="/>
         <field:input field="GPS_latituud" id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" z="lysAPHD+0yKDya+FEggYvRH8KHQ="/>
         <field:select field="piiriloik" id="c_ee_itcollege_intsidentspring_entities_Intsident_piiriloik" itemValue="id" items="${piiriloiks}" path="/piiriloiks" required="true" z="aq9MlW3alqQsiwFvcqSj1HZy8HY="/>
-        <field:select field="liik" id="c_ee_itcollege_intsidentspring_entities_Intsident_liik" itemValue="id" items="${intsidendiliiks}" path="/intsidendiliiks" required="true" z="h5XxSUZC8efAvJuFCYFerheqnqk="/>
+        <field:select field="intsidendiTyyp" id="c_ee_itcollege_intsidentspring_entities_Intsident_intsidendiTyyp" itemValue="id" items="${intsidendityyps}" path="/intsidendityyps" required="true" z="KRH6x4wWL345pU75zFuha8iQkl4="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Intsident" render="${not empty dependencies}" z="Jr7ur7F/caTODVOxbqUsghMeJu4="/>
 </div>

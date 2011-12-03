@@ -5,21 +5,21 @@ package ee.itcollege.intsidentspring.entities;
 
 import java.lang.String;
 
-privileged aspect IntsidendiLiik_Roo_JavaBean {
+privileged aspect IntsidendiTyyp_Roo_JavaBean {
     
-    public String IntsidendiLiik.getKood() {
+    public String IntsidendiTyyp.getKood() {
         return this.kood;
     }
     
-    public void IntsidendiLiik.setKood(String kood) {
+    public void IntsidendiTyyp.setKood(String kood) {
         this.kood = kood;
     }
     
-    public String IntsidendiLiik.getNimetus() {
+    public String IntsidendiTyyp.getNimetus() {
         return this.nimetus;
     }
     
-    public void IntsidendiLiik.setNimetus(String nimetus) {
+    public void IntsidendiTyyp.setNimetus(String nimetus) {
         this.nimetus = nimetus;
     }
     

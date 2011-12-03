@@ -3,7 +3,7 @@
 
 package ee.itcollege.intsidentspring.entities;
 
-import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
+import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
 import ee.itcollege.intsidentspring.entities.Piiriloik;
 import java.lang.String;
 import java.util.Date;
@@ -74,12 +74,12 @@ privileged aspect Intsident_Roo_JavaBean {
         this.kirjeldus = kirjeldus;
     }
     
-    public IntsidendiLiik Intsident.getLiik() {
-        return this.liik;
+    public IntsidendiTyyp Intsident.getIntsidendiTyyp() {
+        return this.intsidendiTyyp;
     }
     
-    public void Intsident.setLiik(IntsidendiLiik liik) {
-        this.liik = liik;
+    public void Intsident.setIntsidendiTyyp(IntsidendiTyyp intsidendiTyyp) {
+        this.intsidendiTyyp = intsidendiTyyp;
     }
     
 }

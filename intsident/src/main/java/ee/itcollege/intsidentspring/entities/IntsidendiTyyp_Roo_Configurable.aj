@@ -5,8 +5,8 @@ package ee.itcollege.intsidentspring.entities;
 
 import org.springframework.beans.factory.annotation.Configurable;
 
-privileged aspect IntsidendiLiik_Roo_Configurable {
+privileged aspect IntsidendiTyyp_Roo_Configurable {
     
-    declare @type: IntsidendiLiik: @Configurable;
+    declare @type: IntsidendiTyyp: @Configurable;
     
 }

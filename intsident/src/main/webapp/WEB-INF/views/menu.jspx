@@ -31,10 +31,6 @@
             <menu:item id="i_vahtkondpiiriloigul_new" messageCode="global_menu_new" url="/vahtkondpiiriloiguls?form" z="6VEc5iw5a4+tJHGYHQkuX2JAk44="/>
             <menu:item id="i_vahtkondpiiriloigul_list" messageCode="global_menu_list" url="/vahtkondpiiriloiguls?page=1&amp;size=${empty param.size ? 10 : param.size}" z="A/+4qStMrqo1C9HVE1iQwTfW7Sk="/>
         </menu:category>
-        <menu:category id="c_intsidendiliik" z="5sFVQws8nDxUQTwy8b2OF4yOuJk=">
-            <menu:item id="i_intsidendiliik_new" messageCode="global_menu_new" url="/intsidendiliiks?form" z="bisLYTttGHOJhpb6iPYuVsXvH6Q="/>
-            <menu:item id="i_intsidendiliik_list" messageCode="global_menu_list" url="/intsidendiliiks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Soe3eFPh8EjS9q1wA0v6lbxicEA="/>
-        </menu:category>
         <menu:category id="c_piirivalvurintsidendis" z="2A4RHnMmWNYYoZXEgP1sX8rkiK4=">
             <menu:item id="i_piirivalvurintsidendis_new" messageCode="global_menu_new" url="/piirivalvurintsidendises?form" z="AAKwsf36eJIHNL9x8Ln1LAgzVbc="/>
             <menu:item id="i_piirivalvurintsidendis_list" messageCode="global_menu_list" url="/piirivalvurintsidendises?page=1&amp;size=${empty param.size ? 10 : param.size}" z="g+B0jbR1/i5TfIkJhG1YCfPBqrY="/>
@@ -46,6 +42,10 @@
         <menu:category id="c_piiririkkuja" z="JMlBoa5Zk33SRu+AsyTwMO+66T0=">
             <menu:item id="i_piiririkkuja_new" messageCode="global_menu_new" url="/piiririkkujas?form" z="SCaVFfGzCq9PMaYCiefQM+0Hir8="/>
             <menu:item id="i_piiririkkuja_list" messageCode="global_menu_list" url="/piiririkkujas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZtbTlYCoTxzaDW+jM5SusvFZgK8="/>
+        </menu:category>
+        <menu:category id="c_intsidendityyp" z="1z0SutnS904nWFqR1NVCvo+L2Os=">
+            <menu:item id="i_intsidendityyp_new" messageCode="global_menu_new" url="/intsidendityyps?form" z="mmvnEhhIn8ETF+QorniUZBZ9j4M="/>
+            <menu:item id="i_intsidendityyp_list" messageCode="global_menu_list" url="/intsidendityyps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Kqpyxam+xn5J+fqMGsUXDsRhmAs="/>
         </menu:category>
     </menu:menu>
 </div>

@@ -3,7 +3,7 @@
 
 package ee.itcollege.intsidentspring.web;
 
-import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
+import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
 import ee.itcollege.intsidentspring.entities.Intsident;
 import ee.itcollege.intsidentspring.entities.Piiriloik;
 import java.io.UnsupportedEncodingException;
@@ -49,8 +49,8 @@ privileged aspect IntsidentController_Roo_Controller {
         if (Piiriloik.countPiiriloiks() == 0) {
             dependencies.add(new String[]{"piiriloik", "piiriloiks"});
         }
-        if (IntsidendiLiik.countIntsidendiLiiks() == 0) {
-            dependencies.add(new String[]{"intsidendiliik", "intsidendiliiks"});
+        if (IntsidendiTyyp.countIntsidendiTyyps() == 0) {
+            dependencies.add(new String[]{"intsidendityyp", "intsidendityyps"});
         }
         uiModel.addAttribute("dependencies", dependencies);
         return "intsidents/create";
@@ -106,9 +106,9 @@ privileged aspect IntsidentController_Roo_Controller {
         return "redirect:/intsidents";
     }
     
-    @ModelAttribute("intsidendiliiks")
-    public Collection<IntsidendiLiik> IntsidentController.populateIntsidendiLiiks() {
-        return IntsidendiLiik.findAllIntsidendiLiiks();
+    @ModelAttribute("intsidendityyps")
+    public Collection<IntsidendiTyyp> IntsidentController.populateIntsidendiTyyps() {
+        return IntsidendiTyyp.findAllIntsidendiTyyps();
     }
     
     @ModelAttribute("intsidents")

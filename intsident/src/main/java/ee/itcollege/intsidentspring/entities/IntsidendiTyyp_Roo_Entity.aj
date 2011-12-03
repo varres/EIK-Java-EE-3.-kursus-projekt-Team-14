@@ -3,7 +3,7 @@
 
 package ee.itcollege.intsidentspring.entities;
 
-import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
+import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
 import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
@@ -17,96 +17,96 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Version;
 import org.springframework.transaction.annotation.Transactional;
 
-privileged aspect IntsidendiLiik_Roo_Entity {
+privileged aspect IntsidendiTyyp_Roo_Entity {
     
-    declare @type: IntsidendiLiik: @Entity;
+    declare @type: IntsidendiTyyp: @Entity;
     
     @PersistenceContext
-    transient EntityManager IntsidendiLiik.entityManager;
+    transient EntityManager IntsidendiTyyp.entityManager;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Long IntsidendiLiik.id;
+    private Long IntsidendiTyyp.id;
     
     @Version
     @Column(name = "version")
-    private Integer IntsidendiLiik.version;
+    private Integer IntsidendiTyyp.version;
     
-    public Long IntsidendiLiik.getId() {
+    public Long IntsidendiTyyp.getId() {
         return this.id;
     }
     
-    public void IntsidendiLiik.setId(Long id) {
+    public void IntsidendiTyyp.setId(Long id) {
         this.id = id;
     }
     
-    public Integer IntsidendiLiik.getVersion() {
+    public Integer IntsidendiTyyp.getVersion() {
         return this.version;
     }
     
-    public void IntsidendiLiik.setVersion(Integer version) {
+    public void IntsidendiTyyp.setVersion(Integer version) {
         this.version = version;
     }
     
     @Transactional
-    public void IntsidendiLiik.persist() {
+    public void IntsidendiTyyp.persist() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.persist(this);
     }
     
     @Transactional
-    public void IntsidendiLiik.remove() {
+    public void IntsidendiTyyp.remove() {
         if (this.entityManager == null) this.entityManager = entityManager();
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            IntsidendiLiik attached = IntsidendiLiik.findIntsidendiLiik(this.id);
+            IntsidendiTyyp attached = IntsidendiTyyp.findIntsidendiTyyp(this.id);
             this.entityManager.remove(attached);
         }
     }
     
     @Transactional
-    public void IntsidendiLiik.flush() {
+    public void IntsidendiTyyp.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();
     }
     
     @Transactional
-    public void IntsidendiLiik.clear() {
+    public void IntsidendiTyyp.clear() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.clear();
     }
     
     @Transactional
-    public IntsidendiLiik IntsidendiLiik.merge() {
+    public IntsidendiTyyp IntsidendiTyyp.merge() {
         if (this.entityManager == null) this.entityManager = entityManager();
-        IntsidendiLiik merged = this.entityManager.merge(this);
+        IntsidendiTyyp merged = this.entityManager.merge(this);
         this.entityManager.flush();
         return merged;
     }
     
-    public static final EntityManager IntsidendiLiik.entityManager() {
-        EntityManager em = new IntsidendiLiik().entityManager;
+    public static final EntityManager IntsidendiTyyp.entityManager() {
+        EntityManager em = new IntsidendiTyyp().entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
         return em;
     }
     
-    public static long IntsidendiLiik.countIntsidendiLiiks() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM IntsidendiLiik o", Long.class).getSingleResult();
+    public static long IntsidendiTyyp.countIntsidendiTyyps() {
+        return entityManager().createQuery("SELECT COUNT(o) FROM IntsidendiTyyp o", Long.class).getSingleResult();
     }
     
-    public static List<IntsidendiLiik> IntsidendiLiik.findAllIntsidendiLiiks() {
-        return entityManager().createQuery("SELECT o FROM IntsidendiLiik o", IntsidendiLiik.class).getResultList();
+    public static List<IntsidendiTyyp> IntsidendiTyyp.findAllIntsidendiTyyps() {
+        return entityManager().createQuery("SELECT o FROM IntsidendiTyyp o", IntsidendiTyyp.class).getResultList();
     }
     
-    public static IntsidendiLiik IntsidendiLiik.findIntsidendiLiik(Long id) {
+    public static IntsidendiTyyp IntsidendiTyyp.findIntsidendiTyyp(Long id) {
         if (id == null) return null;
-        return entityManager().find(IntsidendiLiik.class, id);
+        return entityManager().find(IntsidendiTyyp.class, id);
     }
     
-    public static List<IntsidendiLiik> IntsidendiLiik.findIntsidendiLiikEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM IntsidendiLiik o", IntsidendiLiik.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    public static List<IntsidendiTyyp> IntsidendiTyyp.findIntsidendiTyypEntries(int firstResult, int maxResults) {
+        return entityManager().createQuery("SELECT o FROM IntsidendiTyyp o", IntsidendiTyyp.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

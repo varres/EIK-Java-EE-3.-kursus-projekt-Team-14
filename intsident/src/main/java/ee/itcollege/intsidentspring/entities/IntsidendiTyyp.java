@@ -9,14 +9,12 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class IntsidendiLiik {
+public class IntsidendiTyyp {
 	
 	@NotNull
 	private String kood;
 	
 	@NotNull
 	private String nimetus;
-	
-	
 	
 }

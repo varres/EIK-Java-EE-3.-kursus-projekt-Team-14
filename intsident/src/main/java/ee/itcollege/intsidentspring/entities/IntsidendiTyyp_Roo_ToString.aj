@@ -5,9 +5,9 @@ package ee.itcollege.intsidentspring.entities;
 
 import java.lang.String;
 
-privileged aspect IntsidendiLiik_Roo_ToString {
+privileged aspect IntsidendiTyyp_Roo_ToString {
     
-    public String IntsidendiLiik.toString() {
+    public String IntsidendiTyyp.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");

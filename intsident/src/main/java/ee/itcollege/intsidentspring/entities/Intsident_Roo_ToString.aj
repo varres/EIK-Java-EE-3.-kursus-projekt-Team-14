@@ -12,9 +12,9 @@ privileged aspect Intsident_Roo_ToString {
         sb.append("GPS_latituud: ").append(getGPS_latituud()).append(", ");
         sb.append("GPS_longituud: ").append(getGPS_longituud()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
+        sb.append("IntsidendiTyyp: ").append(getIntsidendiTyyp()).append(", ");
         sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");
-        sb.append("Liik: ").append(getLiik()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("Piiriloik: ").append(getPiiriloik()).append(", ");
         sb.append("Toimumise_algus: ").append(getToimumise_algus()).append(", ");

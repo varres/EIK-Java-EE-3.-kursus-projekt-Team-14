@@ -41,6 +41,6 @@ public class Intsident  {
 	
 	@ManyToOne
 	@NotNull
-	private IntsidendiLiik liik;
+	private IntsidendiTyyp intsidendiTyyp;
 	
 }
