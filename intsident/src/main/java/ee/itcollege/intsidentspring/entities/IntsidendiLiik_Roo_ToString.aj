@@ -10,7 +10,6 @@ privileged aspect IntsidendiLiik_Roo_ToString {
     public String IntsidendiLiik.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Kood: ").append(getKood()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("Version: ").append(getVersion());

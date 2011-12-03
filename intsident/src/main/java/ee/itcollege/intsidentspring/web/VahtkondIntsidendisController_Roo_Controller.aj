@@ -15,6 +15,8 @@ import java.util.Collection;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.joda.time.format.DateTimeFormat;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -31,6 +33,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     public String VahtkondIntsidendisController.create(@Valid VahtkondIntsidendis vahtkondIntsidendis, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("vahtkondIntsidendis", vahtkondIntsidendis);
+            addDateTimeFormatPatterns(uiModel);
             return "vahtkondintsidendises/create";
         }
         uiModel.asMap().clear();
@@ -41,6 +44,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String VahtkondIntsidendisController.createForm(Model uiModel) {
         uiModel.addAttribute("vahtkondIntsidendis", new VahtkondIntsidendis());
+        addDateTimeFormatPatterns(uiModel);
         List dependencies = new ArrayList();
         if (Vahtkond.countVahtkonds() == 0) {
             dependencies.add(new String[]{"vahtkond", "vahtkonds"});
@@ -54,6 +58,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String VahtkondIntsidendisController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("vahtkondintsidendis", VahtkondIntsidendis.findVahtkondIntsidendis(id));
         uiModel.addAttribute("itemId", id);
         return "vahtkondintsidendises/show";
@@ -69,6 +74,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
         } else {
             uiModel.addAttribute("vahtkondintsidendises", VahtkondIntsidendis.findAllVahtkondIntsidendises());
         }
+        addDateTimeFormatPatterns(uiModel);
         return "vahtkondintsidendises/list";
     }
     
@@ -76,6 +82,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     public String VahtkondIntsidendisController.update(@Valid VahtkondIntsidendis vahtkondIntsidendis, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("vahtkondIntsidendis", vahtkondIntsidendis);
+            addDateTimeFormatPatterns(uiModel);
             return "vahtkondintsidendises/update";
         }
         uiModel.asMap().clear();
@@ -86,6 +93,7 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String VahtkondIntsidendisController.updateForm(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("vahtkondIntsidendis", VahtkondIntsidendis.findVahtkondIntsidendis(id));
+        addDateTimeFormatPatterns(uiModel);
         return "vahtkondintsidendises/update";
     }
     
@@ -111,6 +119,11 @@ privileged aspect VahtkondIntsidendisController_Roo_Controller {
     @ModelAttribute("vahtkondintsidendises")
     public Collection<VahtkondIntsidendis> VahtkondIntsidendisController.populateVahtkondIntsidendises() {
         return VahtkondIntsidendis.findAllVahtkondIntsidendises();
+    }
+    
+    void VahtkondIntsidendisController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("vahtkondIntsidendis_alates_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("vahtkondIntsidendis_kuni_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String VahtkondIntsidendisController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

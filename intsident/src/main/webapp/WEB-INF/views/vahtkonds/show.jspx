@@ -4,6 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ee_itcollege_intsidentspring_entities_Vahtkond" object="${vahtkond}" path="/vahtkonds" z="WqepcM86KcllT4ASiOn0W+zHWco=">
         <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_Vahtkond_nimetus" object="${vahtkond}" z="Ymdn52TvTIsEdCj7PI1bBsL9ee8="/>
-        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Vahtkond_kommentaar" object="${vahtkond}" z="9KHas8O8PxsuGRR272tc6vHMMDs="/>
+        <field:display field="kood" id="s_ee_itcollege_intsidentspring_entities_Vahtkond_kood" object="${vahtkond}" z="ewAPNycHrP7QfUohlmrTYdEi420="/>
+        <field:display date="true" dateTimePattern="${vahtkond_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_Vahtkond_alates" object="${vahtkond}" z="VCCXRMGrbMVQNowXXITVRgPZr+c="/>
+        <field:display date="true" dateTimePattern="${vahtkond_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" object="${vahtkond}" z="HK0SgmaOp4gwbxqES4mDyv/eufo="/>
     </page:show>
 </div>

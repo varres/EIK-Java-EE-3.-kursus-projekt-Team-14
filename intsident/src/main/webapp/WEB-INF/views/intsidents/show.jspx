@@ -8,10 +8,9 @@
         <field:display date="true" dateTimePattern="${intsident_toimumise_algus_date_format}" field="toimumise_algus" id="s_ee_itcollege_intsidentspring_entities_Intsident_toimumise_algus" object="${intsident}" z="TjCO8nK5XspvBs9VX2Pi9xeU38g="/>
         <field:display date="true" dateTimePattern="${intsident_toimumise_lopp_date_format}" field="toimumise_lopp" id="s_ee_itcollege_intsidentspring_entities_Intsident_toimumise_lopp" object="${intsident}" z="3ZYJjSCThIjfFZM2CubI1tYT6+I="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_Intsident_kirjeldus" object="${intsident}" z="vjkJO+jydoliJiaAS3VgXA2JLI8="/>
-        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Intsident_kommentaar" object="${intsident}" z="8wCwtyZLYsj5UhUivdN8ICKf0IE="/>
         <field:display field="GPS_longituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" object="${intsident}" z="Rh5QYlTQMSJU9ABheT1Tpz+7GHc="/>
         <field:display field="GPS_latituud" id="s_ee_itcollege_intsidentspring_entities_Intsident_GPS_latituud" object="${intsident}" z="PtFgF69HwR1KZVwjxfi0jnbFKww="/>
-        <field:display field="intsidenti_liik" id="s_ee_itcollege_intsidentspring_entities_Intsident_intsidenti_liik" object="${intsident}" z="SCIO4iP0w4DRLhXJbU6zkWS4Ra0="/>
         <field:display field="piiriloik" id="s_ee_itcollege_intsidentspring_entities_Intsident_piiriloik" object="${intsident}" z="eiCJ+hJlEXntRegTKHqnERj4Rvc="/>
+        <field:display field="liik" id="s_ee_itcollege_intsidentspring_entities_Intsident_liik" object="${intsident}" z="h9JHp3xf6DJELtg3yzd5PqjmxwE="/>
     </page:show>
 </div>

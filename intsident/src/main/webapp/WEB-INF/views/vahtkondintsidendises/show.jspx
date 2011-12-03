@@ -6,6 +6,7 @@
         <field:display field="vahtkond" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" object="${vahtkondintsidendis}" z="m/HN8e2IqAgxl4v3fEGiKXiuXbA="/>
         <field:display field="intsident" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" object="${vahtkondintsidendis}" z="BzjGQqR7leIp3A6TmesQOZWlRQg="/>
         <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" object="${vahtkondintsidendis}" z="Tye+ShsImAfOHbRz+En2IMro3d8="/>
-        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" object="${vahtkondintsidendis}" z="LAPvwaQMHII5Ie3kKJkOAKPaB94="/>
+        <field:display date="true" dateTimePattern="${vahtkondIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_alates" object="${vahtkondintsidendis}" z="rYMpTraBFea1cTDX1wmSOfC7EnE="/>
+        <field:display date="true" dateTimePattern="${vahtkondIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kuni" object="${vahtkondintsidendis}" z="WU2kxRA5mFNvcs9EpARzQhn2w2E="/>
     </page:show>
 </div>

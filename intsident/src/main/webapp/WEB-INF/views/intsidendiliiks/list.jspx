@@ -6,7 +6,6 @@
         <table:table data="${intsidendiliiks}" id="l_ee_itcollege_intsidentspring_entities_IntsidendiLiik" path="/intsidendiliiks" z="9uGImL9hJw3J/nfYtEtzjBueS70=">
             <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kood" property="kood" z="Rg+jB9avap461PKGjFrh1/KYxwg="/>
             <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_nimetus" property="nimetus" z="Vf/JKl60BN5ZvhcsNKH0zawG/tw="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kommentaar" property="kommentaar" z="L6nHZmOoQ+dgADJMQEiWkO4fnyk="/>
         </table:table>
     </page:list>
 </div>

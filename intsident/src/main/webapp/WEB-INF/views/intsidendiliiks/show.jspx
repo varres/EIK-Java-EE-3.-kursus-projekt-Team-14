@@ -5,6 +5,5 @@
     <page:show id="ps_ee_itcollege_intsidentspring_entities_IntsidendiLiik" object="${intsidendiliik}" path="/intsidendiliiks" z="9gQYP9RH6xf2x+jg/wHOMt+9TnY=">
         <field:display field="kood" id="s_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kood" object="${intsidendiliik}" z="qffPxkit0BgS/hp2878NmhgIh5w="/>
         <field:display field="nimetus" id="s_ee_itcollege_intsidentspring_entities_IntsidendiLiik_nimetus" object="${intsidendiliik}" z="bd1XuLpzrz63vCA9EWXtcnmV9lc="/>
-        <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kommentaar" object="${intsidendiliik}" z="86UdcomcoKqTYLBccGz4pOgKp+8="/>
     </page:show>
 </div>

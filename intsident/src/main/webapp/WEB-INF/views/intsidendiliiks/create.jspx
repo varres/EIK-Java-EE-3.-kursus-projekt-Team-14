@@ -5,7 +5,6 @@
     <form:create id="fc_ee_itcollege_intsidentspring_entities_IntsidendiLiik" modelAttribute="intsidendiLiik" path="/intsidendiliiks" render="${empty dependencies}" z="VWH2UvR4aRpfFtIx8TIjeTzQZZ8=">
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kood" required="true" z="KmKzD7pP1a2iWP/q7ms6czJl+UI="/>
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_nimetus" required="true" z="byFSEvG/+yvvOTeumkHyPiTqor0="/>
-        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kommentaar" z="EvbTASZa3ojpihPoNTUSnfobBTc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_IntsidendiLiik" render="${not empty dependencies}" z="GwOHs1YAlax7q9gCWZC1iNZw9ho="/>
 </div>

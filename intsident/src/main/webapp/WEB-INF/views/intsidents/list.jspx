@@ -8,8 +8,8 @@
             <table:column id="c_ee_itcollege_intsidentspring_entities_Intsident_nimetus" property="nimetus" z="SwPRGiEjYWJxI/dJzz4UxQsg4yg="/>
             <table:column date="true" dateTimePattern="${intsident_toimumise_algus_date_format}" id="c_ee_itcollege_intsidentspring_entities_Intsident_toimumise_algus" property="toimumise_algus" z="5Wn94FJnelUNcaQREVOoIlZlhyY="/>
             <table:column date="true" dateTimePattern="${intsident_toimumise_lopp_date_format}" id="c_ee_itcollege_intsidentspring_entities_Intsident_toimumise_lopp" property="toimumise_lopp" z="Phuu41cKWpqMPL3DmYNicoKrqIo="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Intsident_kirjeldus" property="kirjeldus" z="UiRW8TMdRYOCs+/NGq5APMuuHXA="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Intsident_kommentaar" property="kommentaar" z="bU78NpSiDItpiTtHgNb5P1hIHek="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Intsident_piiriloik" property="piiriloik" z="IkLjtK4s7Mm2oF1BHBIjbsoet70="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Intsident_GPS_longituud" property="GPS_longituud" z="/Jja9huzXD9ekuZLLzRtze2EGsw="/>
         </table:table>
     </page:list>
 </div>

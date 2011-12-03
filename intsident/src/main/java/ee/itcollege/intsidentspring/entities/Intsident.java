@@ -11,65 +11,20 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
-//CREATE TABLE INTSIDENT (
-//intsident_ID         INTEGER,
-//avaja                VARCHAR(32) NOT NULL,
-//avatud               DATE NOT NULL,
-//muutja               VARCHAR(32) NOT NULL,
-//muudetud             DATE NOT NULL,
-//sulgeja              VARCHAR(32),
-//suletud              DATE NOT NULL,
-//kood                 VARCHAR(20),
-//nimetus              VARCHAR(100),
-//toimumise_algus      DATE,
-//toimumise_lopp       DATE,
-//kirjeldus            LONG VARCHAR,
-//kommentaar           LONG VARCHAR,
-//piiriloik_ID         INTEGER,
-//intsidendi_liik_ID   INTEGER NOT NULL,
-//GPS_longituud        DECIMAL(9),
-//GPS_latituud         DECIMAL(9),
-//PRIMARY KEY (intsident_ID), 
-//FOREIGN KEY (intsidendi_liik_ID)
-//                      REFERENCES INTSIDENDI_LIIK
-//                      ON DELETE RESTRICT, 
-//FOREIGN KEY (piiriloik_ID)
-//                      REFERENCES PIIRILOIK
-//                      ON DELETE SET NULL
-//);
-
-
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Intsident {
-
-//    @NotNull
-//    private int intsident_ID;
-//    
-//    @NotNull
-//	private String avaja;
-//    
-//    @NotNull
-//    @DateTimeFormat(style="M-")
-//    private Date avatud;
-//    
-//    @NotNull
-//	private String muutja;
-//    
-//    @NotNull
-//    @DateTimeFormat(style="M-")
-//    private Date muudetud;
-//	
-//    private String sulgeja;
-//	
-//	@NotNull
-//	@DateTimeFormat(style="M-")
-//	private Date suletud;
+public class Intsident  {
 	
+	@NotNull
 	private String kood;
 	
+	@NotNull
 	private String nimetus;
+	
+	@ManyToOne
+	@NotNull
+	private Piiriloik piiriloik;
 	
 	@DateTimeFormat(style="M-")
 	private Date toimumise_algus;
@@ -77,20 +32,15 @@ public class Intsident {
 	@DateTimeFormat(style="M-")
 	private Date toimumise_lopp;
 	
+	private double GPS_longituud;
+	
+	private double GPS_latituud;
+	
+	@NotNull
 	private String kirjeldus;
 	
-	private String kommentaar;
-	
 	@ManyToOne
 	@NotNull
-	private Piiriloik piiriloik;
+	private IntsidendiLiik liik;
 	
-	@ManyToOne
-	@NotNull
-	private IntsidendiLiik intsidenti_liik;
-	
-	private int GPS_longituud;
-	
-	private int GPS_latituud;
-
 }

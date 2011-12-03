@@ -9,8 +9,11 @@ privileged aspect ObjektIntsidendis_Roo_ToString {
     
     public String ObjektIntsidendis.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("Alates: ").append(getAlates()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Intsident: ").append(getIntsident()).append(", ");
+        sb.append("Kirjeldus: ").append(getKirjeldus()).append(", ");
+        sb.append("Kuni: ").append(getKuni()).append(", ");
         sb.append("Objekt: ").append(getObjekt()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

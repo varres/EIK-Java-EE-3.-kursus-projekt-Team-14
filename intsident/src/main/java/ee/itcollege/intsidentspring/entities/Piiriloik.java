@@ -17,5 +17,7 @@ public class Piiriloik {
 	@NotNull
 	private String nimetus;
 	
-	private Long GPS_koordinaadid;
+	@NotNull
+	private String GPS_koordinaadid;
+	
 }

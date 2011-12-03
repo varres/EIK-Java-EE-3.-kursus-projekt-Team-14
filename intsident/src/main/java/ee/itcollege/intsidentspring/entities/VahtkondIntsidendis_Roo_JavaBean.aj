@@ -6,6 +6,7 @@ package ee.itcollege.intsidentspring.entities;
 import ee.itcollege.intsidentspring.entities.Intsident;
 import ee.itcollege.intsidentspring.entities.Vahtkond;
 import java.lang.String;
+import java.util.Date;
 
 privileged aspect VahtkondIntsidendis_Roo_JavaBean {
     
@@ -17,12 +18,20 @@ privileged aspect VahtkondIntsidendis_Roo_JavaBean {
         this.vahtkond = vahtkond;
     }
     
-    public Intsident VahtkondIntsidendis.getIntsident() {
-        return this.intsident;
+    public Date VahtkondIntsidendis.getAlates() {
+        return this.alates;
     }
     
-    public void VahtkondIntsidendis.setIntsident(Intsident intsident) {
-        this.intsident = intsident;
+    public void VahtkondIntsidendis.setAlates(Date alates) {
+        this.alates = alates;
+    }
+    
+    public Date VahtkondIntsidendis.getKuni() {
+        return this.kuni;
+    }
+    
+    public void VahtkondIntsidendis.setKuni(Date kuni) {
+        this.kuni = kuni;
     }
     
     public String VahtkondIntsidendis.getKirjeldus() {
@@ -33,12 +42,12 @@ privileged aspect VahtkondIntsidendis_Roo_JavaBean {
         this.kirjeldus = kirjeldus;
     }
     
-    public String VahtkondIntsidendis.getKommentaar() {
-        return this.kommentaar;
+    public Intsident VahtkondIntsidendis.getIntsident() {
+        return this.intsident;
     }
     
-    public void VahtkondIntsidendis.setKommentaar(String kommentaar) {
-        this.kommentaar = kommentaar;
+    public void VahtkondIntsidendis.setIntsident(Intsident intsident) {
+        this.intsident = intsident;
     }
     
 }

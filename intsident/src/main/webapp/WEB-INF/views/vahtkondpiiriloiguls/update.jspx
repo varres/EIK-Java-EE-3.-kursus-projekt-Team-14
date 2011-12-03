@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul" modelAttribute="vahtkondPiiriloigul" path="/vahtkondpiiriloiguls" versionField="Version" z="G2dZ04bw+/uyIqRlBH64SNBzNV4=">
+        <field:input field="vahtkond" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_vahtkond" required="true" z="WkaxRVdlZpu2Jkhl3mcF2LO3Sng="/>
+        <field:select field="piiriloik" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_piiriloik" itemValue="id" items="${piiriloiks}" path="/piiriloiks" required="true" z="SieyDhTu/VIOvBKWINzgox8swAo="/>
+        <field:datetime dateTimePattern="${vahtkondPiiriloigul_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_alates" required="true" z="gqWdNnPBOegsNpRPf9+7cxTKmi4="/>
+        <field:datetime dateTimePattern="${vahtkondPiiriloigul_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kuni" required="true" z="dFyowLlufXj8JDDBmfTcuM3iXDk="/>
+    </form:update>
+</div>

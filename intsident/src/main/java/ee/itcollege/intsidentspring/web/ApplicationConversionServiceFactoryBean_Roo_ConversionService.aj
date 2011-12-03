@@ -5,10 +5,15 @@ package ee.itcollege.intsidentspring.web;
 
 import ee.itcollege.intsidentspring.entities.IntsidendiLiik;
 import ee.itcollege.intsidentspring.entities.Intsident;
+import ee.itcollege.intsidentspring.entities.IsikIntsidendis;
 import ee.itcollege.intsidentspring.entities.Objekt;
+import ee.itcollege.intsidentspring.entities.ObjektIntsidendis;
 import ee.itcollege.intsidentspring.entities.Piiriloik;
+import ee.itcollege.intsidentspring.entities.Piiririkkuja;
+import ee.itcollege.intsidentspring.entities.PiirivalvurIntsidendis;
 import ee.itcollege.intsidentspring.entities.Vahtkond;
 import ee.itcollege.intsidentspring.entities.VahtkondIntsidendis;
+import ee.itcollege.intsidentspring.entities.VahtkondPiiriloigul;
 import java.lang.String;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
@@ -18,10 +23,15 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(new IntsidendiLiikConverter());
         registry.addConverter(new IntsidentConverter());
+        registry.addConverter(new IsikIntsidendisConverter());
         registry.addConverter(new ObjektConverter());
+        registry.addConverter(new ObjektIntsidendisConverter());
         registry.addConverter(new PiiriloikConverter());
+        registry.addConverter(new PiiririkkujaConverter());
+        registry.addConverter(new PiirivalvurIntsidendisConverter());
         registry.addConverter(new VahtkondConverter());
         registry.addConverter(new VahtkondIntsidendisConverter());
+        registry.addConverter(new VahtkondPiiriloigulConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {
@@ -31,7 +41,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.IntsidendiLiikConverter implements Converter<IntsidendiLiik, String> {
         public String convert(IntsidendiLiik intsidendiLiik) {
-            return new StringBuilder().append(intsidendiLiik.getKood()).append(" ").append(intsidendiLiik.getNimetus()).append(" ").append(intsidendiLiik.getKommentaar()).toString();
+            return new StringBuilder().append(intsidendiLiik.getKood()).append(" ").append(intsidendiLiik.getNimetus()).toString();
         }
         
     }
@@ -43,9 +53,23 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         
     }
     
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.IsikIntsidendisConverter implements Converter<IsikIntsidendis, String> {
+        public String convert(IsikIntsidendis isikIntsidendis) {
+            return new StringBuilder().append(isikIntsidendis.getAlates()).append(" ").append(isikIntsidendis.getKuni()).append(" ").append(isikIntsidendis.getKirjeldus()).toString();
+        }
+        
+    }
+    
     static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.ObjektConverter implements Converter<Objekt, String> {
         public String convert(Objekt objekt) {
             return new StringBuilder().append(objekt.getNimetus()).toString();
+        }
+        
+    }
+    
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.ObjektIntsidendisConverter implements Converter<ObjektIntsidendis, String> {
+        public String convert(ObjektIntsidendis objektIntsidendis) {
+            return new StringBuilder().append(objektIntsidendis.getAlates()).append(" ").append(objektIntsidendis.getKuni()).append(" ").append(objektIntsidendis.getKirjeldus()).toString();
         }
         
     }
@@ -57,16 +81,37 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         
     }
     
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.PiiririkkujaConverter implements Converter<Piiririkkuja, String> {
+        public String convert(Piiririkkuja piiririkkuja) {
+            return new StringBuilder().append(piiririkkuja.getIsikukood()).append(" ").append(piiririkkuja.getEesnimi()).append(" ").append(piiririkkuja.getPerenimi()).append(" ").append(piiririkkuja.getSugu()).toString();
+        }
+        
+    }
+    
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.PiirivalvurIntsidendisConverter implements Converter<PiirivalvurIntsidendis, String> {
+        public String convert(PiirivalvurIntsidendis piirivalvurIntsidendis) {
+            return new StringBuilder().append(piirivalvurIntsidendis.getAlates()).append(" ").append(piirivalvurIntsidendis.getKuni()).append(" ").append(piirivalvurIntsidendis.getKirjeldus()).toString();
+        }
+        
+    }
+    
     static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.VahtkondConverter implements Converter<Vahtkond, String> {
         public String convert(Vahtkond vahtkond) {
-            return new StringBuilder().append(vahtkond.getNimetus()).append(" ").append(vahtkond.getKommentaar()).toString();
+            return new StringBuilder().append(vahtkond.getKood()).append(" ").append(vahtkond.getNimetus()).append(" ").append(vahtkond.getAlates()).append(" ").append(vahtkond.getKuni()).toString();
         }
         
     }
     
     static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.VahtkondIntsidendisConverter implements Converter<VahtkondIntsidendis, String> {
         public String convert(VahtkondIntsidendis vahtkondIntsidendis) {
-            return new StringBuilder().append(vahtkondIntsidendis.getKirjeldus()).append(" ").append(vahtkondIntsidendis.getKommentaar()).toString();
+            return new StringBuilder().append(vahtkondIntsidendis.getAlates()).append(" ").append(vahtkondIntsidendis.getKuni()).append(" ").append(vahtkondIntsidendis.getKirjeldus()).toString();
+        }
+        
+    }
+    
+    static class ee.itcollege.intsidentspring.web.ApplicationConversionServiceFactoryBean.VahtkondPiiriloigulConverter implements Converter<VahtkondPiiriloigul, String> {
+        public String convert(VahtkondPiiriloigul vahtkondPiiriloigul) {
+            return new StringBuilder().append(vahtkondPiiriloigul.getAlates()).append(" ").append(vahtkondPiiriloigul.getKuni()).toString();
         }
         
     }

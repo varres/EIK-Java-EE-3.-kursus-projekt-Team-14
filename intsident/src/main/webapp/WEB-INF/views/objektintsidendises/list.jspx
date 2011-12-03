@@ -6,6 +6,9 @@
         <table:table data="${objektintsidendises}" id="l_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" path="/objektintsidendises" z="fFf0liMs756qqmqfgKpFNgSif2U=">
             <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_objekt" property="objekt" z="GwOUfTgYOWpb7Y7g0sVbC6QNSzA="/>
             <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_intsident" property="intsident" z="dt2HqvydPnfmjpvfLMypHMY3xbM="/>
+            <table:column date="true" dateTimePattern="${objektIntsidendis_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_alates" property="alates" z="bRVn45BcI5JA66sTVlSwvWxq/I8="/>
+            <table:column date="true" dateTimePattern="${objektIntsidendis_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kuni" property="kuni" z="DkZcaoGuDeeNhMSd638ZEy7f/ag="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kirjeldus" property="kirjeldus" z="8ogien2mtDGLsRIDaRDXydVMfjg="/>
         </table:table>
     </page:list>
 </div>

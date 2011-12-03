@@ -9,7 +9,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Objekt {
+public class Objekt extends BaseEntity{
 	
 	@NotNull
 	private String nimetus;

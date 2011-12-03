@@ -1,17 +1,33 @@
 package ee.itcollege.intsidentspring.entities;
 
+import java.io.Serializable;
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
+
+import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
 @RooJavaBean
 @RooToString
 @RooEntity
-public class Vahtkond {
+public class Vahtkond  {
 
     @NotNull
-    private String nimetus;
+    private String kood;
 
-    private String kommentaar;
+	@NotNull
+    private String nimetus;
+    
+    @DateTimeFormat(style="M-")
+	@NotNull
+    private Date alates;
+    
+    @DateTimeFormat(style="M-")
+	@NotNull
+    private Date kuni;
+    
 }

@@ -4,7 +4,9 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_Vahtkond" modelAttribute="vahtkond" path="/vahtkonds" render="${empty dependencies}" z="hMjSJIk8lJbpXRT8lXNmYVvPd38=">
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_nimetus" required="true" z="dWFdle/1V2JxA27onNhQwayRphw="/>
-        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kommentaar" z="iR3ZjLAXY6uvQD86dahwtR9qFTo="/>
+        <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kood" required="true" z="6rZAmeHJrPXiIq5SiPrg6kiv4vk="/>
+        <field:datetime dateTimePattern="${vahtkond_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_alates" required="true" z="4C++mUNRZDogfvzeJPRa/X9nljQ="/>
+        <field:datetime dateTimePattern="${vahtkond_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" required="true" z="x2SWnihTv9GqiFQUUentSnkznvc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Vahtkond" render="${not empty dependencies}" z="o9Bxd+kYX7xiEk6bu9HoDe7/fVg="/>
 </div>

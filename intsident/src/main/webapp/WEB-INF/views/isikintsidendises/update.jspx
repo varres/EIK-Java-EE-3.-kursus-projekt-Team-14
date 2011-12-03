@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_intsidentspring_entities_IsikIntsidendis" modelAttribute="isikIntsidendis" path="/isikintsidendises" versionField="Version" z="NfjGtEIg2KPcUuFN47SEHH5gRZA=">
+        <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="DihFcgpu3vqdeWripd8R/FcJqcQ="/>
+        <field:select field="piiririkkuja" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_piiririkkuja" itemValue="id" items="${piiririkkujas}" path="/piiririkkujas" required="true" z="/Vwx8BLA41G2n7hosMBEMmJuJmk="/>
+        <field:datetime dateTimePattern="${isikIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_alates" required="true" z="kFM29RmcXIetg5szaBum4SRLL3U="/>
+        <field:datetime dateTimePattern="${isikIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kuni" required="true" z="EtpeZKpwNdns/yacj1Dp+t6UGXc="/>
+        <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kirjeldus" required="true" z="IyT130ULrHgaZhn/McWGrEBKOA0="/>
+    </form:update>
+</div>

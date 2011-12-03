@@ -5,6 +5,8 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.Intsident;
 import ee.itcollege.intsidentspring.entities.Objekt;
+import java.lang.String;
+import java.util.Date;
 
 privileged aspect ObjektIntsidendis_Roo_JavaBean {
     
@@ -22,6 +24,30 @@ privileged aspect ObjektIntsidendis_Roo_JavaBean {
     
     public void ObjektIntsidendis.setIntsident(Intsident intsident) {
         this.intsident = intsident;
+    }
+    
+    public Date ObjektIntsidendis.getAlates() {
+        return this.alates;
+    }
+    
+    public void ObjektIntsidendis.setAlates(Date alates) {
+        this.alates = alates;
+    }
+    
+    public Date ObjektIntsidendis.getKuni() {
+        return this.kuni;
+    }
+    
+    public void ObjektIntsidendis.setKuni(Date kuni) {
+        this.kuni = kuni;
+    }
+    
+    public String ObjektIntsidendis.getKirjeldus() {
+        return this.kirjeldus;
+    }
+    
+    public void ObjektIntsidendis.setKirjeldus(String kirjeldus) {
+        this.kirjeldus = kirjeldus;
     }
     
 }

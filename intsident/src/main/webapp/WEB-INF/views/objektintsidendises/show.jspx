@@ -5,5 +5,8 @@
     <page:show id="ps_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" object="${objektintsidendis}" path="/objektintsidendises" z="HDuQo2ZC2fBlZcZr/5lo77NHKnM=">
         <field:display field="objekt" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_objekt" object="${objektintsidendis}" z="j51dST+DSzNnOhcp/n39zy2dDhg="/>
         <field:display field="intsident" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_intsident" object="${objektintsidendis}" z="PXCbetVbYb8b2EwlPSHTgxMkbLU="/>
+        <field:display date="true" dateTimePattern="${objektIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_alates" object="${objektintsidendis}" z="LkwT4yQ/FIUZspTD0msfpg1Exqo="/>
+        <field:display date="true" dateTimePattern="${objektIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kuni" object="${objektintsidendis}" z="ci36csenwoBcUSn1nyWf4yBbVj8="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kirjeldus" object="${objektintsidendis}" z="TBB699cMa41iMBTmQ9wQ/im6VVk="/>
     </page:show>
 </div>

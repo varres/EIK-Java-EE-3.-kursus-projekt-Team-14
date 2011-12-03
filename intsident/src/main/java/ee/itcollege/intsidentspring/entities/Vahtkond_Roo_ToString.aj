@@ -9,8 +9,10 @@ privileged aspect Vahtkond_Roo_ToString {
     
     public String Vahtkond.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("Alates: ").append(getAlates()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
+        sb.append("Kood: ").append(getKood()).append(", ");
+        sb.append("Kuni: ").append(getKuni()).append(", ");
         sb.append("Nimetus: ").append(getNimetus()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

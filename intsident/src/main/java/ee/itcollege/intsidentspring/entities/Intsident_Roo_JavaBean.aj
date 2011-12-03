@@ -26,6 +26,14 @@ privileged aspect Intsident_Roo_JavaBean {
         this.nimetus = nimetus;
     }
     
+    public Piiriloik Intsident.getPiiriloik() {
+        return this.piiriloik;
+    }
+    
+    public void Intsident.setPiiriloik(Piiriloik piiriloik) {
+        this.piiriloik = piiriloik;
+    }
+    
     public Date Intsident.getToimumise_algus() {
         return this.toimumise_algus;
     }
@@ -42,6 +50,22 @@ privileged aspect Intsident_Roo_JavaBean {
         this.toimumise_lopp = toimumise_lopp;
     }
     
+    public double Intsident.getGPS_longituud() {
+        return this.GPS_longituud;
+    }
+    
+    public void Intsident.setGPS_longituud(double GPS_longituud) {
+        this.GPS_longituud = GPS_longituud;
+    }
+    
+    public double Intsident.getGPS_latituud() {
+        return this.GPS_latituud;
+    }
+    
+    public void Intsident.setGPS_latituud(double GPS_latituud) {
+        this.GPS_latituud = GPS_latituud;
+    }
+    
     public String Intsident.getKirjeldus() {
         return this.kirjeldus;
     }
@@ -50,44 +74,12 @@ privileged aspect Intsident_Roo_JavaBean {
         this.kirjeldus = kirjeldus;
     }
     
-    public String Intsident.getKommentaar() {
-        return this.kommentaar;
+    public IntsidendiLiik Intsident.getLiik() {
+        return this.liik;
     }
     
-    public void Intsident.setKommentaar(String kommentaar) {
-        this.kommentaar = kommentaar;
-    }
-    
-    public Piiriloik Intsident.getPiiriloik() {
-        return this.piiriloik;
-    }
-    
-    public void Intsident.setPiiriloik(Piiriloik piiriloik) {
-        this.piiriloik = piiriloik;
-    }
-    
-    public IntsidendiLiik Intsident.getIntsidenti_liik() {
-        return this.intsidenti_liik;
-    }
-    
-    public void Intsident.setIntsidenti_liik(IntsidendiLiik intsidenti_liik) {
-        this.intsidenti_liik = intsidenti_liik;
-    }
-    
-    public int Intsident.getGPS_longituud() {
-        return this.GPS_longituud;
-    }
-    
-    public void Intsident.setGPS_longituud(int GPS_longituud) {
-        this.GPS_longituud = GPS_longituud;
-    }
-    
-    public int Intsident.getGPS_latituud() {
-        return this.GPS_latituud;
-    }
-    
-    public void Intsident.setGPS_latituud(int GPS_latituud) {
-        this.GPS_latituud = GPS_latituud;
+    public void Intsident.setLiik(IntsidendiLiik liik) {
+        this.liik = liik;
     }
     
 }

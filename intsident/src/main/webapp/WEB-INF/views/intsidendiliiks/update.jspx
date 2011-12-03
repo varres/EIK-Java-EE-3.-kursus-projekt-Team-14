@@ -5,6 +5,5 @@
     <form:update id="fu_ee_itcollege_intsidentspring_entities_IntsidendiLiik" modelAttribute="intsidendiLiik" path="/intsidendiliiks" versionField="Version" z="WDp3u+v+4Pm9N0bpwt3ODHe+Tbo=">
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kood" required="true" z="KmKzD7pP1a2iWP/q7ms6czJl+UI="/>
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_nimetus" required="true" z="byFSEvG/+yvvOTeumkHyPiTqor0="/>
-        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_IntsidendiLiik_kommentaar" z="EvbTASZa3ojpihPoNTUSnfobBTc="/>
     </form:update>
 </div>

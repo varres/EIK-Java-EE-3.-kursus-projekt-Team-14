@@ -5,7 +5,9 @@
     <page:list id="pl_ee_itcollege_intsidentspring_entities_Vahtkond" items="${vahtkonds}" z="KOIM8yxGnodmZ5iYSXLXYnHO7bk=">
         <table:table data="${vahtkonds}" id="l_ee_itcollege_intsidentspring_entities_Vahtkond" path="/vahtkonds" z="uXRikawuWisw5XOsekh2ZZWEZ3I=">
             <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_nimetus" property="nimetus" z="WkilVPkIEilMXx1rYjSa1pUOfd0="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kommentaar" property="kommentaar" z="VnPAQR60vzkVFQ2BJzObXqdzWyE="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kood" property="kood" z="8ZHnZ7kKIW4Ks8hy5oUp/V6DKXo="/>
+            <table:column date="true" dateTimePattern="${vahtkond_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_alates" property="alates" z="MUsS6ZWYX4dupfCePi+d12d9dk8="/>
+            <table:column date="true" dateTimePattern="${vahtkond_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" property="kuni" z="s4nhbw9DnQRfLG/QlGms9wjvBAQ="/>
         </table:table>
     </page:list>
 </div>

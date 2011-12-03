@@ -3,7 +3,6 @@
 
 package ee.itcollege.intsidentspring.entities;
 
-import java.lang.Long;
 import java.lang.String;
 
 privileged aspect Piiriloik_Roo_JavaBean {
@@ -24,11 +23,11 @@ privileged aspect Piiriloik_Roo_JavaBean {
         this.nimetus = nimetus;
     }
     
-    public Long Piiriloik.getGPS_koordinaadid() {
+    public String Piiriloik.getGPS_koordinaadid() {
         return this.GPS_koordinaadid;
     }
     
-    public void Piiriloik.setGPS_koordinaadid(Long GPS_koordinaadid) {
+    public void Piiriloik.setGPS_koordinaadid(String GPS_koordinaadid) {
         this.GPS_koordinaadid = GPS_koordinaadid;
     }
     

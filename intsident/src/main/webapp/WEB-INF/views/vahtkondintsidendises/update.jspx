@@ -5,7 +5,8 @@
     <form:update id="fu_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis" modelAttribute="vahtkondIntsidendis" path="/vahtkondintsidendises" versionField="Version" z="rZn28UiApSKaj2GW9v43gnudqJE=">
         <field:select field="vahtkond" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" itemValue="id" items="${vahtkonds}" path="/vahtkonds" required="true" z="9BBAoljWydpR2solaJev3o6TN6k="/>
         <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="IqBT7z6Bcatdkr7QkdNsozD6yk0="/>
-        <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" z="9weQjv/WCplJC88gU8ZqHy/bfKY="/>
-        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" z="vqW+hDT2DPfDVvk37C7Z3i76FN8="/>
+        <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" required="true" z="NUmPF43va1CCk51V+laR7BoPYYo="/>
+        <field:datetime dateTimePattern="${vahtkondIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_alates" required="true" z="MDVWw8lQjxaoU3aMC79sovfgZ0c="/>
+        <field:datetime dateTimePattern="${vahtkondIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kuni" required="true" z="Y5s2UvizMGyIiaWM1WHETICsKbM="/>
     </form:update>
 </div>

@@ -17,5 +17,6 @@ public class IntsidendiLiik {
 	@NotNull
 	private String nimetus;
 	
-	private String kommentaar;
+	
+	
 }

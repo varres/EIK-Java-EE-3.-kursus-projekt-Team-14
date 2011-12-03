@@ -23,12 +23,4 @@ privileged aspect IntsidendiLiik_Roo_JavaBean {
         this.nimetus = nimetus;
     }
     
-    public String IntsidendiLiik.getKommentaar() {
-        return this.kommentaar;
-    }
-    
-    public void IntsidendiLiik.setKommentaar(String kommentaar) {
-        this.kommentaar = kommentaar;
-    }
-    
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_intsidentspring_entities_IsikIntsidendis" items="${isikintsidendises}" z="XlB8ILADr1wmSCjrRiOkR/XeRmg=">
+        <table:table data="${isikintsidendises}" id="l_ee_itcollege_intsidentspring_entities_IsikIntsidendis" path="/isikintsidendises" z="xpLihiN5An8HzBDOczWWtnzzleY=">
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_intsident" property="intsident" z="Tv093e4NoDLiz39mXe4jsUcguLo="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_piiririkkuja" property="piiririkkuja" z="jG/2xID8nHTHQny8cVqAjLOdERY="/>
+            <table:column date="true" dateTimePattern="${isikIntsidendis_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_alates" property="alates" z="JjnGDkUSS1jlozmVhTspxB1qR8s="/>
+            <table:column date="true" dateTimePattern="${isikIntsidendis_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kuni" property="kuni" z="tgIe9yU6GvsAsLcH7mqN9FlNwn8="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_IsikIntsidendis_kirjeldus" property="kirjeldus" z="fm+6gkS2Jth9qjwtkfP9myC8Lp8="/>
+        </table:table>
+    </page:list>
+</div>

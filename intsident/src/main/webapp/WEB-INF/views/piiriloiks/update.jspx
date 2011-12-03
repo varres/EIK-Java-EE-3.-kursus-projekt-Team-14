@@ -5,6 +5,6 @@
     <form:update id="fu_ee_itcollege_intsidentspring_entities_Piiriloik" modelAttribute="piiriloik" path="/piiriloiks" versionField="Version" z="3ByP2ciMS+XyLjyp7CZjtZQ8jWE=">
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_kood" required="true" z="UVEV3NhF8+nMa7inRPKIxZe0d9I="/>
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_nimetus" required="true" z="l7nEZd8nKWC3MDpkYbAixyeB2wc="/>
-        <field:input field="GPS_koordinaadid" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_GPS_koordinaadid" validationMessageCode="field_invalid_integer" z="ryDKfTpOxC4u9PsM9B+ZucGXHik="/>
+        <field:input field="GPS_koordinaadid" id="c_ee_itcollege_intsidentspring_entities_Piiriloik_GPS_koordinaadid" required="true" z="o/mN6F/8FIsVsCwqGglXZI9D2C8="/>
     </form:update>
 </div>

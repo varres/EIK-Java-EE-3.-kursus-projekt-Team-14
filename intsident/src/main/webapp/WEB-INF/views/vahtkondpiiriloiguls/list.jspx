@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul" items="${vahtkondpiiriloiguls}" z="KIRgtgqta7uZCjI9dsg93zXJ46Y=">
+        <table:table data="${vahtkondpiiriloiguls}" id="l_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul" path="/vahtkondpiiriloiguls" z="Gito6FhE3Hq8Ezqd8ON078EBv4c=">
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_vahtkond" property="vahtkond" z="qp2F9X9PLE9PDjG7yK7tUjE0a8A="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_piiriloik" property="piiriloik" z="P4eeLnKt0txfYY+mVnvE3W7Qh3k="/>
+            <table:column date="true" dateTimePattern="${vahtkondPiiriloigul_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_alates" property="alates" z="8+3yyGztR3Q8pzadELz4CKq50Cs="/>
+            <table:column date="true" dateTimePattern="${vahtkondPiiriloigul_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_VahtkondPiiriloigul_kuni" property="kuni" z="s1RHoe4+ZeaUiFiYD4/fHjLqWHs="/>
+        </table:table>
+    </page:list>
+</div>

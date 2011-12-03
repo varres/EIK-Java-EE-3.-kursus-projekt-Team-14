@@ -5,6 +5,9 @@
     <form:create id="fc_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" modelAttribute="objektIntsidendis" path="/objektintsidendises" render="${empty dependencies}" z="L55X7Ria0/SQLCSZ/67DLKVd10w=">
         <field:select field="objekt" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_objekt" itemValue="id" items="${objekts}" path="/objekts" required="true" z="gmncDH+x+BVl63OfPkylyMIZkaE="/>
         <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="IDu0+jOqYzmj/C6ROVayU336948="/>
+        <field:datetime dateTimePattern="${objektIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_alates" required="true" z="ZH3Dr2krKLClhWiMNmySq4Huy/g="/>
+        <field:datetime dateTimePattern="${objektIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kuni" required="true" z="gkPKOinJ1nQ8CXnMkTFAFHPfpfE="/>
+        <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_ObjektIntsidendis_kirjeldus" required="true" z="TYECKT4U8QhBE+fczgfI2gJVcSk="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_ObjektIntsidendis" render="${not empty dependencies}" z="gRR2HeZa+L/Wq1lKuVP6I0c1h6o="/>
 </div>

@@ -4,6 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ee_itcollege_intsidentspring_entities_Vahtkond" modelAttribute="vahtkond" path="/vahtkonds" versionField="Version" z="XpJb0Y+vfVRsxD56O7z0ubP/Los=">
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_nimetus" required="true" z="dWFdle/1V2JxA27onNhQwayRphw="/>
-        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kommentaar" z="iR3ZjLAXY6uvQD86dahwtR9qFTo="/>
+        <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kood" required="true" z="6rZAmeHJrPXiIq5SiPrg6kiv4vk="/>
+        <field:datetime dateTimePattern="${vahtkond_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_alates" required="true" z="4C++mUNRZDogfvzeJPRa/X9nljQ="/>
+        <field:datetime dateTimePattern="${vahtkond_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" required="true" z="x2SWnihTv9GqiFQUUentSnkznvc="/>
     </form:update>
 </div>

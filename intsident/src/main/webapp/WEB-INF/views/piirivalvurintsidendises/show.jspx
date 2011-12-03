@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis" object="${piirivalvurintsidendis}" path="/piirivalvurintsidendises" z="b1f0Mq36ugIBx/oHmo05pjoJqys=">
+        <field:display field="intsident" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_intsident" object="${piirivalvurintsidendis}" z="Mrul2cwheKzkxIr7wwiwBAAW27A="/>
+        <field:display field="piirivalvur" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_piirivalvur" object="${piirivalvurintsidendis}" z="Wi8w7A1pSLHsKLVGwwIhK+BKjrY="/>
+        <field:display field="vahtkondIntsidendis" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_vahtkondIntsidendis" object="${piirivalvurintsidendis}" z="NODYI7ZrmVz1Fmb0bV+nm9mvGs0="/>
+        <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_alates_date_format}" field="alates" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_alates" object="${piirivalvurintsidendis}" z="88872JJBnHl7wEpHVkBgMxvYdV0="/>
+        <field:display date="true" dateTimePattern="${piirivalvurIntsidendis_kuni_date_format}" field="kuni" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kuni" object="${piirivalvurintsidendis}" z="kUsfk9ggtpl903kdXnCARSGBBvo="/>
+        <field:display field="kirjeldus" id="s_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kirjeldus" object="${piirivalvurintsidendis}" z="p5JSrrD4Uvak5ni8Y1bE738g0JY="/>
+    </page:show>
+</div>

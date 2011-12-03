@@ -7,7 +7,8 @@
             <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_vahtkond" property="vahtkond" z="6aeivETNnbODV8lWeKB2PX5xZX4="/>
             <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_intsident" property="intsident" z="44c6vQQTLeAj29+JPOP5EwfsogE="/>
             <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kirjeldus" property="kirjeldus" z="Q7XqzW9XDMghYnPA7hhZ91xcnps="/>
-            <table:column id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kommentaar" property="kommentaar" z="6asMYJbrFVPxQxZ5ja4T2G9Jm0s="/>
+            <table:column date="true" dateTimePattern="${vahtkondIntsidendis_alates_date_format}" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_alates" property="alates" z="oK2+pgjHzHjKbRxGyiOfC9eaDJM="/>
+            <table:column date="true" dateTimePattern="${vahtkondIntsidendis_kuni_date_format}" id="c_ee_itcollege_intsidentspring_entities_VahtkondIntsidendis_kuni" property="kuni" z="lNUHFy17h+8UxDE51jE6YXWxzqg="/>
         </table:table>
     </page:list>
 </div>
