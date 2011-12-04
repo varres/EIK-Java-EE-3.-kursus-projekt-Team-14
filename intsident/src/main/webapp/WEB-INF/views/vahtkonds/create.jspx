@@ -7,12 +7,6 @@
         <field:input field="kood" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kood" required="true" z="6rZAmeHJrPXiIq5SiPrg6kiv4vk="/>
         <field:datetime dateTimePattern="${vahtkond_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_alates" required="true" z="4C++mUNRZDogfvzeJPRa/X9nljQ="/>
         <field:datetime dateTimePattern="${vahtkond_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kuni" required="true" z="x2SWnihTv9GqiFQUUentSnkznvc="/>
-        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_avaja" z="/NFzGPp6TyvEPPXOKRMq88s/ymQ="/>
-        <field:datetime dateTimePattern="${vahtkond_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_avatud" z="E6C7JPmVyrWsXALw5x6msBWFFpY="/>
-        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_muutja" z="/NHBE9hIFQBRlVrXbcxvhgu+BIo="/>
-        <field:datetime dateTimePattern="${vahtkond_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_muudetud" z="RiunTtQtwEftTPhJ/eO3Nfp0R6k="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_sulgeja" z="5lHy0lJ81Dl+rtqx3j6QjPtCvIc="/>
-        <field:datetime dateTimePattern="${vahtkond_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_suletud" z="9m/Hkpilb8I6vlG82+Y0cvFemTI="/>
         <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_kommentaar" z="iR3ZjLAXY6uvQD86dahwtR9qFTo="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Vahtkond" render="${not empty dependencies}" z="o9Bxd+kYX7xiEk6bu9HoDe7/fVg="/>

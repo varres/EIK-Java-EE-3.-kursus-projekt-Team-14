@@ -4,12 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis" modelAttribute="vahtkond_intsidendis" path="/vahtkond_intsidendises" render="${empty dependencies}" z="dbMBNw+ijfipisoR2Pb0ixDPIEY=">
         <field:input field="vahtkond_intsidendis_ID" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_vahtkond_intsidendis_ID" required="true" z="/qQuKb8pl4amfE2yngHt/me+qxc="/>
-        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_avaja" required="true" z="obWhgJa9+XPGwBHmzjUbKa8DOGU="/>
-        <field:datetime dateTimePattern="${vahtkond_intsidendis_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_avatud" required="true" z="iiW2kmN6JBX/F+h316I4n6yESWk="/>
-        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_muutja" required="true" z="rwb4P2bVOLhl+NomXoCWIPjTDe0="/>
-        <field:datetime dateTimePattern="${vahtkond_intsidendis_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_muudetud" required="true" z="HUbM/w25U5NSRKE/tJbTFVHHuew="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_sulgeja" z="AYrpQJ5IkSmo9QzQaYuxoYDAPmU="/>
-        <field:datetime dateTimePattern="${vahtkond_intsidendis_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_suletud" required="true" z="s3pdG2VvyqphRJes+VJrD8/8LiE="/>
         <field:input field="kirjeldus" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_kirjeldus" z="wfK71W+qTtFchiQgVkReRuP5+7M="/>
         <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_kommentaar" z="p1grxK4Jq28096tuM1RmrCOQz7E="/>
         <field:datetime dateTimePattern="${vahtkond_intsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_Vahtkond_intsidendis_alates" z="uq4M7t6zqtjfGosST6PMD0ZrMQE="/>

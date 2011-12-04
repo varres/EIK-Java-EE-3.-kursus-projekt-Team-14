@@ -4,12 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_Objekt" modelAttribute="objekt" path="/objekts" render="${empty dependencies}" z="N4aiPm72YJ8TVqTrENdFstBPFdg=">
         <field:input field="nimetus" id="c_ee_itcollege_intsidentspring_entities_Objekt_nimetus" required="true" z="7rIRC2HS/pObAGY2jNmK2AfF+Q4="/>
-        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Objekt_avaja" z="nfiOWgNQo48LiXDYs4BoA/3FpXI="/>
-        <field:datetime dateTimePattern="${objekt_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Objekt_avatud" z="k0As5ApctKD2QcHZyZeAFyhOZbI="/>
-        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Objekt_muutja" z="FwlJa42OOwogT8NI24SarH2r6hY="/>
-        <field:datetime dateTimePattern="${objekt_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Objekt_muudetud" z="oSuY//VvLdOjxGNs97/u1WzRfUw="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Objekt_sulgeja" z="vgLb9xkcDR+ZS2lB4tvbDktYunY="/>
-        <field:datetime dateTimePattern="${objekt_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Objekt_suletud" z="bGckc44p8x6ELgrKAFC9ZRj0sNk="/>
         <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Objekt_kommentaar" z="SVkeh/AYhnCo9RyrKR0mOyAnfWI="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Objekt" render="${not empty dependencies}" z="7GDtmPyp6fSb+Y6dCoeOLrrM+yQ="/>

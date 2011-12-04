@@ -3,12 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_Piirivalvur" modelAttribute="piirivalvur" path="/piitivalvurs" render="${empty dependencies}" z="uecUaAWQyUOohUKky9AoWP/VAoM=">
-        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avaja" z="rZnxfcYS1RzYanbNMHgaL92xxbU="/>
-        <field:datetime dateTimePattern="${piirivalvur_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avatud" z="AXI9ClK4Pk/42i3sqgcxMIL47DU="/>
-        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muutja" z="A9MtwzLHe6laFkAr3d1bHOZQ/c8="/>
-        <field:datetime dateTimePattern="${piirivalvur_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muudetud" z="E8mgWohmOFFYcCGxcUs7f1j0Rfg="/>
-        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" z="MtV2ovZ2vj7ubSPfkPW3VEVuL/M="/>
-        <field:datetime dateTimePattern="${piirivalvur_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" z="db2LKvrtSn9gvzXyisUVRXV+3i0="/>
         <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_kommentaar" z="sKjsZ/1QfRHKdITR9a+zWt9S1Ao="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Piirivalvur" render="${not empty dependencies}" z="adu5reK+UXsTEena33/NrJT7G/8="/>
