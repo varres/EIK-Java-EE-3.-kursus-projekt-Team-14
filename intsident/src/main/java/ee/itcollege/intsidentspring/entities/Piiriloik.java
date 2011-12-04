@@ -1,5 +1,7 @@
 package ee.itcollege.intsidentspring.entities;
 
+import java.util.List;
+
 import javax.validation.constraints.NotNull;
 
 import org.springframework.roo.addon.entity.RooEntity;
@@ -10,14 +12,35 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity
 public class Piiriloik extends BaseEntity {
-	
+
 	@NotNull
 	private String kood;
-	
+
 	@NotNull
 	private String nimetus;
-	
+
 	@NotNull
 	private String GPS_koordinaadid;
-	
+
+	public static long countPiiriloiks() {
+		return entityManager().createQuery(
+				"SELECT COUNT(o) FROM Piiriloik o" + BaseEntity.SQL_ROBOT_NAME,
+				Long.class).getSingleResult();
+	}
+
+	public static List<Piiriloik> findAllPiiriloiks() {
+		return entityManager().createQuery(
+				"SELECT o FROM Piiriloik o" + BaseEntity.SQL_ROBOT_NAME,
+				Piiriloik.class).getResultList();
+	}
+
+	public static List<Piiriloik> findPiiriloikEntries(int firstResult,
+			int maxResults) {
+		return entityManager()
+				.createQuery(
+						"SELECT o FROM Piiriloik o" + BaseEntity.SQL_ROBOT_NAME,
+						Piiriloik.class).setFirstResult(firstResult)
+				.setMaxResults(maxResults).getResultList();
+	}
+
 }

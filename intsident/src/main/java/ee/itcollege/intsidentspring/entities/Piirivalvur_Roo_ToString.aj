@@ -11,10 +11,15 @@ privileged aspect Piirivalvur_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("Avaja: ").append(getAvaja()).append(", ");
         sb.append("Avatud: ").append(getAvatud()).append(", ");
+        sb.append("Eesnimi: ").append(getEesnimi()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
+        sb.append("Isikukood: ").append(getIsikukood()).append(", ");
         sb.append("Kommentaar: ").append(getKommentaar()).append(", ");
         sb.append("Muudetud: ").append(getMuudetud()).append(", ");
         sb.append("Muutja: ").append(getMuutja()).append(", ");
+        sb.append("Perenimi: ").append(getPerenimi()).append(", ");
+        sb.append("SoduriKood: ").append(getSoduriKood()).append(", ");
+        sb.append("Sugu: ").append(getSugu()).append(", ");
         sb.append("Suletud: ").append(getSuletud()).append(", ");
         sb.append("Sulgeja: ").append(getSulgeja()).append(", ");
         sb.append("Version: ").append(getVersion());

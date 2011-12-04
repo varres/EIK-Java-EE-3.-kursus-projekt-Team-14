@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.ObjektIntsidendis;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect ObjektIntsidendis_Roo_Entity {
     
     declare @type: ObjektIntsidendis: @Entity;
     
-    public static long ObjektIntsidendis.countObjektIntsidendises() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM ObjektIntsidendis o", Long.class).getSingleResult();
-    }
-    
-    public static List<ObjektIntsidendis> ObjektIntsidendis.findAllObjektIntsidendises() {
-        return entityManager().createQuery("SELECT o FROM ObjektIntsidendis o", ObjektIntsidendis.class).getResultList();
-    }
-    
     public static ObjektIntsidendis ObjektIntsidendis.findObjektIntsidendis(Long id) {
         if (id == null) return null;
         return entityManager().find(ObjektIntsidendis.class, id);
-    }
-    
-    public static List<ObjektIntsidendis> ObjektIntsidendis.findObjektIntsidendisEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM ObjektIntsidendis o", ObjektIntsidendis.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

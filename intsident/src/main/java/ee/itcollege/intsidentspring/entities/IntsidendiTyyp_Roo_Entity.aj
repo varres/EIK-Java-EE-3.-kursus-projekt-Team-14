@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.IntsidendiTyyp;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect IntsidendiTyyp_Roo_Entity {
     
     declare @type: IntsidendiTyyp: @Entity;
     
-    public static long IntsidendiTyyp.countIntsidendiTyyps() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM IntsidendiTyyp o", Long.class).getSingleResult();
-    }
-    
-    public static List<IntsidendiTyyp> IntsidendiTyyp.findAllIntsidendiTyyps() {
-        return entityManager().createQuery("SELECT o FROM IntsidendiTyyp o", IntsidendiTyyp.class).getResultList();
-    }
-    
     public static IntsidendiTyyp IntsidendiTyyp.findIntsidendiTyyp(Long id) {
         if (id == null) return null;
         return entityManager().find(IntsidendiTyyp.class, id);
-    }
-    
-    public static List<IntsidendiTyyp> IntsidendiTyyp.findIntsidendiTyypEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM IntsidendiTyyp o", IntsidendiTyyp.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

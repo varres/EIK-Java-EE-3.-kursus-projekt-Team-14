@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.Piiririkkuja;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect Piiririkkuja_Roo_Entity {
     
     declare @type: Piiririkkuja: @Entity;
     
-    public static long Piiririkkuja.countPiiririkkujas() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM Piiririkkuja o", Long.class).getSingleResult();
-    }
-    
-    public static List<Piiririkkuja> Piiririkkuja.findAllPiiririkkujas() {
-        return entityManager().createQuery("SELECT o FROM Piiririkkuja o", Piiririkkuja.class).getResultList();
-    }
-    
     public static Piiririkkuja Piiririkkuja.findPiiririkkuja(Long id) {
         if (id == null) return null;
         return entityManager().find(Piiririkkuja.class, id);
-    }
-    
-    public static List<Piiririkkuja> Piiririkkuja.findPiiririkkujaEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM Piiririkkuja o", Piiririkkuja.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis" modelAttribute="piirivalvurIntsidendis" path="/piirivalvurintsidendises" render="${empty dependencies}" z="n8XBtmePFG/812MyRBZ3ul1KM+o=">
         <field:select field="intsident" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_intsident" itemValue="id" items="${intsidents}" path="/intsidents" required="true" z="EkT9IScCDRNqU9379TaH1fKJkaY="/>
-        <field:select field="piirivalvur" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_piirivalvur" itemValue="id" items="${piirivalvurs}" path="/piirivalvurs" required="true" z="KAXAO+S2f2sstKPw37ZvMwHzlg4="/>
+        <field:select field="piirivalvur" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_piirivalvur" itemValue="id" items="${piirivalvurs}" path="/piitivalvurs" required="true" z="Rav27SH42x69zHkXfQ+ryADLhmQ="/>
         <field:select field="vahtkondIntsidendis" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_vahtkondIntsidendis" itemValue="id" items="${vahtkondintsidendises}" path="/vahtkondintsidendises" required="true" z="cMfj5v+l36mjY/V6QCKCimO6INk="/>
         <field:datetime dateTimePattern="${piirivalvurIntsidendis_alates_date_format}" field="alates" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_alates" required="true" z="Tz94dQ/wqWB+fVC+qYih3btVp6U="/>
         <field:datetime dateTimePattern="${piirivalvurIntsidendis_kuni_date_format}" field="kuni" id="c_ee_itcollege_intsidentspring_entities_PiirivalvurIntsidendis_kuni" required="true" z="nhbkF2+AyNzpBz9EuIs+bLNPkQc="/>

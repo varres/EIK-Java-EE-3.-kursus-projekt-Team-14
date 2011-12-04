@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.VahtkondIntsidendis;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect VahtkondIntsidendis_Roo_Entity {
     
     declare @type: VahtkondIntsidendis: @Entity;
     
-    public static long VahtkondIntsidendis.countVahtkondIntsidendises() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM VahtkondIntsidendis o", Long.class).getSingleResult();
-    }
-    
-    public static List<VahtkondIntsidendis> VahtkondIntsidendis.findAllVahtkondIntsidendises() {
-        return entityManager().createQuery("SELECT o FROM VahtkondIntsidendis o", VahtkondIntsidendis.class).getResultList();
-    }
-    
     public static VahtkondIntsidendis VahtkondIntsidendis.findVahtkondIntsidendis(Long id) {
         if (id == null) return null;
         return entityManager().find(VahtkondIntsidendis.class, id);
-    }
-    
-    public static List<VahtkondIntsidendis> VahtkondIntsidendis.findVahtkondIntsidendisEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM VahtkondIntsidendis o", VahtkondIntsidendis.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

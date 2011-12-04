@@ -10,5 +10,10 @@
         <field:display field="sulgeja" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" object="${piirivalvur}" z="4FZ4DrIAO0q1s2cyVvYTyr4k5aQ="/>
         <field:display date="true" dateTimePattern="${piirivalvur_suletud_date_format}" field="suletud" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" object="${piirivalvur}" z="i54x3MdQotpeR2KlUsE6ask3xUk="/>
         <field:display field="kommentaar" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_kommentaar" object="${piirivalvur}" z="ZdtvUnuOn9FZOaqGeum7QNxcakg="/>
+        <field:display field="isikukood" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_isikukood" object="${piirivalvur}" z="EPDv1kXU4K/IHCZcOg1MWUrNSyY="/>
+        <field:display field="eesnimi" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_eesnimi" object="${piirivalvur}" z="4Q87ZPjvMCW9RypwjkNh9rZ3JrQ="/>
+        <field:display field="perenimi" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_perenimi" object="${piirivalvur}" z="nDwR68g0ZE7IhVLprb5ZYR3NRQ4="/>
+        <field:display field="sugu" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_sugu" object="${piirivalvur}" z="AUUmwb28k/F06d+o5KrJR5CwbUs="/>
+        <field:display field="soduriKood" id="s_ee_itcollege_intsidentspring_entities_Piirivalvur_soduriKood" object="${piirivalvur}" z="PNm777uUonf+g+oi06icTN06xWI="/>
     </page:show>
 </div>

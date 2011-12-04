@@ -1,6 +1,7 @@
 package ee.itcollege.intsidentspring.entities;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
@@ -31,9 +32,32 @@ public class Piiririkkuja extends BaseEntity {
 	@DateTimeFormat(style = "M-")
 	@NotNull
 	private Date synniaeg;
-	
+
 	@ManyToOne
 	@NotNull
 	private Objekt objekt;
-	
+
+	public static long countPiiririkkujas() {
+		return entityManager().createQuery(
+				"SELECT COUNT(o) FROM Piiririkkuja o"
+						+ BaseEntity.SQL_ROBOT_NAME, Long.class)
+				.getSingleResult();
+	}
+
+	public static List<Piiririkkuja> findAllPiiririkkujas() {
+		return entityManager().createQuery(
+				"SELECT o FROM Piiririkkuja o" + BaseEntity.SQL_ROBOT_NAME,
+				Piiririkkuja.class).getResultList();
+	}
+
+	public static List<Piiririkkuja> findPiiririkkujaEntries(int firstResult,
+			int maxResults) {
+		return entityManager()
+				.createQuery(
+						"SELECT o FROM Piiririkkuja o"
+								+ BaseEntity.SQL_ROBOT_NAME, Piiririkkuja.class)
+				.setFirstResult(firstResult).setMaxResults(maxResults)
+				.getResultList();
+	}
+
 }

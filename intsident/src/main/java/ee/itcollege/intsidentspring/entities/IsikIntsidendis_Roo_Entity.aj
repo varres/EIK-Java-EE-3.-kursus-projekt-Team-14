@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.IsikIntsidendis;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect IsikIntsidendis_Roo_Entity {
     
     declare @type: IsikIntsidendis: @Entity;
     
-    public static long IsikIntsidendis.countIsikIntsidendises() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM IsikIntsidendis o", Long.class).getSingleResult();
-    }
-    
-    public static List<IsikIntsidendis> IsikIntsidendis.findAllIsikIntsidendises() {
-        return entityManager().createQuery("SELECT o FROM IsikIntsidendis o", IsikIntsidendis.class).getResultList();
-    }
-    
     public static IsikIntsidendis IsikIntsidendis.findIsikIntsidendis(Long id) {
         if (id == null) return null;
         return entityManager().find(IsikIntsidendis.class, id);
-    }
-    
-    public static List<IsikIntsidendis> IsikIntsidendis.findIsikIntsidendisEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM IsikIntsidendis o", IsikIntsidendis.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

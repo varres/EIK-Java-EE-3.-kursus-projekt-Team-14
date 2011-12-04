@@ -5,28 +5,15 @@ package ee.itcollege.intsidentspring.entities;
 
 import ee.itcollege.intsidentspring.entities.PiirivalvurIntsidendis;
 import java.lang.Long;
-import java.util.List;
 import javax.persistence.Entity;
 
 privileged aspect PiirivalvurIntsidendis_Roo_Entity {
     
     declare @type: PiirivalvurIntsidendis: @Entity;
     
-    public static long PiirivalvurIntsidendis.countPiirivalvurIntsidendises() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM PiirivalvurIntsidendis o", Long.class).getSingleResult();
-    }
-    
-    public static List<PiirivalvurIntsidendis> PiirivalvurIntsidendis.findAllPiirivalvurIntsidendises() {
-        return entityManager().createQuery("SELECT o FROM PiirivalvurIntsidendis o", PiirivalvurIntsidendis.class).getResultList();
-    }
-    
     public static PiirivalvurIntsidendis PiirivalvurIntsidendis.findPiirivalvurIntsidendis(Long id) {
         if (id == null) return null;
         return entityManager().find(PiirivalvurIntsidendis.class, id);
-    }
-    
-    public static List<PiirivalvurIntsidendis> PiirivalvurIntsidendis.findPiirivalvurIntsidendisEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM PiirivalvurIntsidendis o", PiirivalvurIntsidendis.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

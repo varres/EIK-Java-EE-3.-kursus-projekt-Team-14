@@ -32,10 +32,7 @@ public class Vahtkond extends BaseEntity {
 	private Date kuni;
 
 	public static List<Vahtkond> findAllVahtkonds() {
-
-		List<Vahtkond> temp1 = entityManager().createQuery(
-				"SELECT o FROM Vahtkond o", Vahtkond.class).getResultList();
-
+		
 		return entityManager().createQuery(
 				"SELECT o FROM Vahtkond o" + BaseEntity.SQL_ROBOT_NAME,
 				Vahtkond.class).getResultList();

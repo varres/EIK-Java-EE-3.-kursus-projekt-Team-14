@@ -10,6 +10,11 @@
         <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" z="MtV2ovZ2vj7ubSPfkPW3VEVuL/M="/>
         <field:datetime dateTimePattern="${piirivalvur_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" z="db2LKvrtSn9gvzXyisUVRXV+3i0="/>
         <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_kommentaar" z="sKjsZ/1QfRHKdITR9a+zWt9S1Ao="/>
+        <field:input field="isikukood" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_isikukood" required="true" z="bcNwJeEovpwAu/Qkz0vHIgPcTr4="/>
+        <field:input field="eesnimi" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_eesnimi" required="true" z="NmICmnIjS/jHTOkQqaEVD2nwToI="/>
+        <field:input field="perenimi" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_perenimi" required="true" z="S1/fEX24H2aePqxQq6gjNT82g7k="/>
+        <field:input field="sugu" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_sugu" required="true" z="pjo/5DkClp7nZrBoDYLbz54YLfg="/>
+        <field:input field="soduriKood" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_soduriKood" required="true" z="QtHE8P6nl0lsi0ZIEi8OmzfGi7o="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ee_itcollege_intsidentspring_entities_Piirivalvur" render="${not empty dependencies}" z="adu5reK+UXsTEena33/NrJT7G/8="/>
 </div>
