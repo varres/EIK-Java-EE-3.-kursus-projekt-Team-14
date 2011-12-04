@@ -31,7 +31,9 @@ import org.springframework.transaction.annotation.Transactional;
 @RooEntity(mappedSuperclass = true)
 public abstract class BaseEntity {
 
-	private static final String robotName = "SURROGAAT-ROBOT";
+	public static final String ROBOT_NAME = "SURROGAAT-ROBOT";
+	public static final String SQL_ROBOT_NAME = " WHERE sulgeja = '"
+			+ BaseEntity.ROBOT_NAME + "'";
 
 	public String avaja;
 
@@ -116,12 +118,25 @@ public abstract class BaseEntity {
 	public static List<BaseEntity> findAllBaseEntitys() {
 
 		// debug
-		return entityManager().createQuery(
-				"SELECT o FROM BaseEntity o WHERE o.sulgeja = '" + robotName
-						+ "'", BaseEntity.class).getResultList();
+		// int count = entityManager().createQuery(
+		// "SELECT o FROM BaseEntity o WHERE o.sulgeja = '" + robotName
+		// + "'", BaseEntity.class).getResultList().size();
+		//
+		// int count2 = entityManager().createQuery(
+		// "SELECT o FROM BaseEntity o",
+		// BaseEntity.class).getResultList().size();
+		//
+		// int count3 = entityManager().createQuery(
+		// "SELECT o FROM BaseEntity o WHERE sulgeja = '" + robotName
+		// + "'", BaseEntity.class).getResultList().size();
+		//
+		//
+		// return entityManager().createQuery(
+		// "SELECT o FROM BaseEntity o WHERE o.sulgeja = '" + robotName
+		// + "'", BaseEntity.class).getResultList();
 
-//		return entityManager().createQuery("SELECT o FROM BaseEntity o",
-//				BaseEntity.class).getResultList();
+		return entityManager().createQuery("SELECT o FROM BaseEntity o",
+				BaseEntity.class).getResultList();
 	}
 
 	@PrePersist
@@ -142,13 +157,13 @@ public abstract class BaseEntity {
 			e.printStackTrace();
 		}
 
-		muutja = robotName;
+		muutja = ROBOT_NAME;
 		try {
 			suletud = new SimpleDateFormat("yyyy-MM-dd").parse("9999-12-31");
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		sulgeja = robotName;
+		sulgeja = ROBOT_NAME;
 	}
 
 	@PreUpdate
