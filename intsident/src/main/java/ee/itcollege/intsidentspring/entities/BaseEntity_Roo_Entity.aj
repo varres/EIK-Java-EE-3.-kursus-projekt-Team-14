@@ -8,23 +8,10 @@ import java.lang.Integer;
 import java.lang.Long;
 import java.util.List;
 import javax.persistence.Column;
-import javax.persistence.EntityManager;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Version;
 import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect BaseEntity_Roo_Entity {
-    
-    @PersistenceContext
-    transient EntityManager BaseEntity.entityManager;
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long BaseEntity.id;
     
     @Version
     @Column(name = "version")
@@ -53,17 +40,6 @@ privileged aspect BaseEntity_Roo_Entity {
     }
     
     @Transactional
-    public void BaseEntity.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            BaseEntity attached = BaseEntity.findBaseEntity(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
     public void BaseEntity.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();
@@ -83,19 +59,8 @@ privileged aspect BaseEntity_Roo_Entity {
         return merged;
     }
     
-    public static final EntityManager BaseEntity.entityManager() {
-        EntityManager em = new BaseEntity() {
-        }.entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
-    
     public static long BaseEntity.countBaseEntitys() {
         return entityManager().createQuery("SELECT COUNT(o) FROM BaseEntity o", Long.class).getSingleResult();
-    }
-    
-    public static List<BaseEntity> BaseEntity.findAllBaseEntitys() {
-        return entityManager().createQuery("SELECT o FROM BaseEntity o", BaseEntity.class).getResultList();
     }
     
     public static BaseEntity BaseEntity.findBaseEntity(Long id) {

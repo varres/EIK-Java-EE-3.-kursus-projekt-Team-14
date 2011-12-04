@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ee_itcollege_intsidentspring_entities_Piirivalvur" modelAttribute="piirivalvur" path="/piitivalvurs" versionField="Version" z="co0wM2QUlkwKKZHq/T0t/cqa4ww=">
+        <field:input field="avaja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avaja" z="rZnxfcYS1RzYanbNMHgaL92xxbU="/>
+        <field:datetime dateTimePattern="${piirivalvur_avatud_date_format}" field="avatud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avatud" z="AXI9ClK4Pk/42i3sqgcxMIL47DU="/>
+        <field:input field="muutja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muutja" z="A9MtwzLHe6laFkAr3d1bHOZQ/c8="/>
+        <field:datetime dateTimePattern="${piirivalvur_muudetud_date_format}" field="muudetud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muudetud" z="E8mgWohmOFFYcCGxcUs7f1j0Rfg="/>
+        <field:input field="sulgeja" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" z="MtV2ovZ2vj7ubSPfkPW3VEVuL/M="/>
+        <field:datetime dateTimePattern="${piirivalvur_suletud_date_format}" field="suletud" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" z="db2LKvrtSn9gvzXyisUVRXV+3i0="/>
+        <field:input field="kommentaar" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_kommentaar" z="sKjsZ/1QfRHKdITR9a+zWt9S1Ao="/>
+    </form:update>
+</div>

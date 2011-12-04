@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="piitivalvurs/list">
+        <put-attribute name="body" value="/WEB-INF/views/piitivalvurs/list.jspx"/>
+    </definition>
+<definition extends="default" name="piitivalvurs/show">
+        <put-attribute name="body" value="/WEB-INF/views/piitivalvurs/show.jspx"/>
+    </definition>
+<definition extends="default" name="piitivalvurs/create">
+        <put-attribute name="body" value="/WEB-INF/views/piitivalvurs/create.jspx"/>
+    </definition>
+<definition extends="default" name="piitivalvurs/update">
+        <put-attribute name="body" value="/WEB-INF/views/piitivalvurs/update.jspx"/>
+    </definition>
+</tiles-definitions>

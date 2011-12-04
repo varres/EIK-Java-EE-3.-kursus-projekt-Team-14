@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ee_itcollege_intsidentspring_entities_Piirivalvur" items="${piirivalvurs}" z="wrQQZPLAtY2pAMeFJAqVO8m8kZU=">
+        <table:table data="${piirivalvurs}" id="l_ee_itcollege_intsidentspring_entities_Piirivalvur" path="/piitivalvurs" z="ALk32L98/811W+gyGI7prWdSUl0=">
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avaja" property="avaja" z="cLGdpuZcum0z12JtiwrSkwLna3M="/>
+            <table:column date="true" dateTimePattern="${piirivalvur_avatud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_avatud" property="avatud" z="aJTi6cI39iPQXUJ+XcP2RNtCw2w="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muutja" property="muutja" z="EAPXxFp9fBgGurhk055K8TeZ74w="/>
+            <table:column date="true" dateTimePattern="${piirivalvur_muudetud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_muudetud" property="muudetud" z="ozqvVMGyULDSK0FdQx46f+srLbU="/>
+            <table:column id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_sulgeja" property="sulgeja" z="NhlQlcG0zVCusMnuXk3SqOxmQhQ="/>
+            <table:column date="true" dateTimePattern="${piirivalvur_suletud_date_format}" id="c_ee_itcollege_intsidentspring_entities_Piirivalvur_suletud" property="suletud" z="kUjwQ2p6P/bgZQ0EBfPJxGG9zQo="/>
+        </table:table>
+    </page:list>
+</div>
